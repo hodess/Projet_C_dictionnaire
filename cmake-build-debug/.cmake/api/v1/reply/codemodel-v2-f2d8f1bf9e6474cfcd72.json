@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.22"
+						"string" : "3.21"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire/cmake-build-debug",
-		"source" : "C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire"
+		"build" : "C:/Users/Gigi/Documents/EFREI/L2-R/informatique/C/projet/Projet_C_dictionnaire/cmake-build-debug",
+		"source" : "C:/Users/Gigi/Documents/EFREI/L2-R/informatique/C/projet/Projet_C_dictionnaire"
 	},
 	"version" : 
 	{
