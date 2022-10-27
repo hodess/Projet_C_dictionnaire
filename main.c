@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "nolan.h"
 
 int main() {
-    printf("Hello, World!\n");
+    start();
     return 0;
 }

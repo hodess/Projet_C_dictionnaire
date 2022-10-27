@@ -10,7 +10,9 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="Projet_C_dictionnaire" targetName="Projet_C_dictionnaire" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -18,7 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbefe0d9-92dd-4177-b1e5-ad12adf7de5f" name="Changes" comment="" />
+    <list default="true" id="cbefe0d9-92dd-4177-b1e5-ad12adf7de5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,9 +80,12 @@
       <option name="presentableId" value="Default" />
       <updated>1666872558623</updated>
       <workItem from="1666872565265" duration="2000" />
-      <workItem from="1666877552276" duration="3000" />
+      <workItem from="1666877552276" duration="250000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
