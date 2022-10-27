@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire/cmake-build-debug",
-		"source" : "C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire"
+		"build" : "C:/Users/moraz/OneDrive/Documents/EFREI/C/generateur de phrase/Projet_C_dictionnaire/cmake-build-debug",
+		"source" : "C:/Users/moraz/OneDrive/Documents/EFREI/C/generateur de phrase/Projet_C_dictionnaire"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }
