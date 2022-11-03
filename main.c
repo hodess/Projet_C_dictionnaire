@@ -2,6 +2,6 @@
 #include "romain's_main.h"
 
 int main() {
-    printf("Hello, World!\n");
+    start();
     return 0;
 }

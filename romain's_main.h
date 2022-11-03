@@ -8,7 +8,7 @@
 #include "liste_lettre.h"
 #include "node_letter.h"
 
-
+void start();
 
 
 
