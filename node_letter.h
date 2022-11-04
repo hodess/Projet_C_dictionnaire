@@ -29,8 +29,8 @@ typedef struct s_rac_letter
 //prototye de mes definitions
 t_rac_letter creation_de_larbre();
 p_node_letter creation_dune_branche(char);
+int gestion_par_les_branches(char,int,p_node_letter);
 int gestion_de_larbre(char,int ,p_rac_letter)
-int gestion_par_les_branches(char,int,p_rac_letter)
 
 
 #endif //MAIN_C_NODE_LETTER_H
