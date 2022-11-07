@@ -5,7 +5,7 @@
 #ifndef PROJET_C_DICTIONNAIRE_ROMAIN_S_MAIN_H
 #define PROJET_C_DICTIONNAIRE_ROMAIN_S_MAIN_H
 #include <stdio.h>
-#include "node_letter.h"
+#include "liste_lettre.h"
 
 void start();
 

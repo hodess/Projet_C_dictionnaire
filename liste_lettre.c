@@ -5,7 +5,7 @@
 #include "liste_lettre.h"
 
 //fonciton qui sert a crée un maillon d'une liste de lettre
-p_liste_lettre creation_maillon_liste_lettre(struct t_node_letter* p)
+p_liste_lettre creation_maillon_liste_lettre(struct s_node_letter* p)
 {
     p_liste_lettre temp=(p_liste_lettre) malloc(sizeof(t_liste_lettre));
     temp->suivant=NULL;

@@ -7,13 +7,14 @@
 #include "liste_lettre.h"
 #include <stdlib.h>
 
+struct s_liste_lettre;
 
 //definition de la structure qui va contenir des lettres et de nombreux elements en plus
 typedef struct s_node_letter
 {
     char lettre;
     int nb_enfant;
-    p_liste_lettre enfants;
+    struct s_liste_lettre* enfants;
     // mots flechis
     struct s_node_letter* suivant;
 }t_node_letter,*p_node_letter;
@@ -22,7 +23,7 @@ typedef struct s_node_letter
 typedef struct s_rac_letter
 {
     int nb_enfants;
-    p_liste_lettre enfants;
+    struct s_liste_lettre* enfants;
     p_node_letter tree;
 }t_rac_letter,*p_rac_letter;
 
