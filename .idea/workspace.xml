@@ -21,13 +21,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/liste_lettre.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/liste_lettre.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/node_letter.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/node_letter.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Projet_C_dictionnaire.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Projet_C_dictionnaire.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liste_lettre.c" beforeDir="false" afterPath="$PROJECT_DIR$/liste_lettre.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liste_lettre.h" beforeDir="false" afterPath="$PROJECT_DIR$/liste_lettre.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_letter.c" beforeDir="false" afterPath="$PROJECT_DIR$/node_letter.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_letter.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_letter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/romain's_main.h" beforeDir="false" afterPath="$PROJECT_DIR$/romain's_main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/romain's_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/romain's_main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +96,13 @@
       <workItem from="1667739643965" duration="593000" />
       <workItem from="1667741361196" duration="1223000" />
       <workItem from="1667834986997" duration="46000" />
-      <workItem from="1667845274325" duration="475000" />
+      <workItem from="1667845274325" duration="574000" />
+      <workItem from="1667857667896" duration="316000" />
+      <workItem from="1667897853940" duration="15000" />
+      <workItem from="1667899545146" duration="631000" />
+      <workItem from="1667900278940" duration="679000" />
+      <workItem from="1667907999061" duration="3633000" />
+      <workItem from="1667920239006" duration="217000" />
     </task>
     <servers />
   </component>
