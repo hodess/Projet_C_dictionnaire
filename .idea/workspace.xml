@@ -21,26 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbefe0d9-92dd-4177-b1e5-ad12adf7de5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/adj.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/adv.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/nom.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/ver.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headers/adj.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headers/adv.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headers/nom.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headers/ver.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ab6e54bb1a0d3c673ea0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-27T13-36-44-0554.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Projet_C_dictionnaire-Debug-88e6089665785d30c326.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nolan.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nolan.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/adj.c" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adj.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/adv.c" beforeDir="false" afterPath="$PROJECT_DIR$/functions/adv.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/nom.c" beforeDir="false" afterPath="$PROJECT_DIR$/functions/nom.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/adj.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/adj.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/adv.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/adv.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/nom.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/nom.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +65,12 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\moraz\OneDrive\Documents\EFREI\C\generateur de phrase\Projet_C_dictionnaire\functions" />
+      <recent name="C:\Users\moraz\OneDrive\Documents\EFREI\C\generateur de phrase\Projet_C_dictionnaire\headers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -101,7 +94,7 @@
       <workItem from="1666872565265" duration="2000" />
       <workItem from="1666877552276" duration="1670000" />
       <workItem from="1667908296851" duration="2775000" />
-      <workItem from="1667915522717" duration="5825000" />
+      <workItem from="1667915522717" duration="8383000" />
     </task>
     <servers />
   </component>

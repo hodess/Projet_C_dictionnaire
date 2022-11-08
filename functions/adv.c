@@ -13,3 +13,11 @@ p_node_adv searchAdv(char word, p_node_adv adv){
     }
     return adv;
 };
+
+void addAdv(char adding_word[40], p_node_adv spot){
+    node_adv adding_node;
+    adding_node.forme_flechie = adding_word;
+    p_node_adv temp = spot->next;
+    spot->next = &adding_node;
+    adding_node.next = temp;
+};

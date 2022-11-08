@@ -5,8 +5,6 @@
 #ifndef MAIN_C_ADJ_H
 #define MAIN_C_ADJ_H
 
-p_node_adj searchAdj(char word, p_node_adj adj);      //retourne NULL si il n'existe pas
-
 typedef struct node_adj_s {
     char forme_flechie[40];
     char genre[6];              //Mas Fem InvGen
@@ -15,4 +13,7 @@ typedef struct node_adj_s {
 
 }node_adj, *p_node_adj;
 
+p_node_adj searchAdj(char word, p_node_adj adj);      //retourne NULL si il n'existe pas
+
+void addAdj(char adding_word[40], p_node_adj spot, char genre[6], char pluriel[5]);
 #endif //MAIN_C_ADJ_H

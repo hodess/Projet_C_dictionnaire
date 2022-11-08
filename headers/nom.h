@@ -5,8 +5,6 @@
 #ifndef MAIN_C_NOM_H
 #define MAIN_C_NOM_H
 
-p_node_nom searchNom(char word, p_node_nom nom);      //retourne NULL si il n'existe pas
-
 typedef struct node_nom_s {
     char forme_flechie[40];
     char genre[6];              //Mas Fem InvGen
@@ -14,5 +12,9 @@ typedef struct node_nom_s {
     struct node_nom_s * next;
 
 }node_nom, *p_node_nom;
+
+p_node_nom searchNom(char word, p_node_nom nom);      //retourne NULL si il n'existe pas
+
+void addNom(char new, p_node_nom spot, char genre, char pluriel);
 
 #endif //MAIN_C_NOM_H
