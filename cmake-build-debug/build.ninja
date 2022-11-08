@@ -61,6 +61,30 @@ build CMakeFiles/Projet_C_dictionnaire.dir/nolan.c.obj: C_COMPILER__Projet_C_dic
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
 
+build CMakeFiles/Projet_C_dictionnaire.dir/nom.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/moraz/OneDrive/Documents/EFREI/C/generateur$ de$ phrase/Projet_C_dictionnaire/nom.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\nom.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+
+build CMakeFiles/Projet_C_dictionnaire.dir/adj.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/moraz/OneDrive/Documents/EFREI/C/generateur$ de$ phrase/Projet_C_dictionnaire/adj.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\adj.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+
+build CMakeFiles/Projet_C_dictionnaire.dir/adv.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/moraz/OneDrive/Documents/EFREI/C/generateur$ de$ phrase/Projet_C_dictionnaire/adv.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\adv.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+
+build CMakeFiles/Projet_C_dictionnaire.dir/ver.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/moraz/OneDrive/Documents/EFREI/C/generateur$ de$ phrase/Projet_C_dictionnaire/ver.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\ver.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Projet_C_dictionnaire
@@ -69,7 +93,7 @@ build CMakeFiles/Projet_C_dictionnaire.dir/nolan.c.obj: C_COMPILER__Projet_C_dic
 #############################################
 # Link the executable Projet_C_dictionnaire.exe
 
-build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/nolan.c.obj
+build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/nolan.c.obj CMakeFiles/Projet_C_dictionnaire.dir/nom.c.obj CMakeFiles/Projet_C_dictionnaire.dir/adj.c.obj CMakeFiles/Projet_C_dictionnaire.dir/adv.c.obj CMakeFiles/Projet_C_dictionnaire.dir/ver.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
