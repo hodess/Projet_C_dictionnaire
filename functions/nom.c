@@ -4,23 +4,24 @@
 
 #include "../headers/nom.h"
 #include <stdio.h>
+#include <string.h>
 
 p_node_nom searchNom(char word, p_node_nom nom){
-    while (word != nom->forme_flechie){
+    while (word != * nom->forme_flechie){
         if (nom->next == NULL) {
             return NULL;
         }
         nom = nom->next;
     }
     return nom;
-};
+}
 
-void addNom(char adding_word[40], p_node_nom spot, char genre[6], char pluriel[5]){
+void addNom(char adding_word[40], p_node_nom spot, int genre, int pluriel){
     node_nom adding_node;
-    adding_node.forme_flechie = adding_word;
+    strcpy(adding_word, adding_node.forme_flechie);
     adding_node.genre = genre;
     adding_node.pluriel = pluriel;
     p_node_nom temp = spot->next;
     spot->next = &adding_node;
     adding_node.next = temp;
-};
+}

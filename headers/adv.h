@@ -7,7 +7,7 @@
 
 typedef struct node_adv_s {
     char forme_flechie[40];
-    struct node_nom_s * next;
+    struct node_adv_s * next;
 
 }node_adv, *p_node_adv;
 

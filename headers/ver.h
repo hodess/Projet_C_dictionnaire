@@ -6,7 +6,6 @@
 #define MAIN_C_VER_H
 
 typedef struct node_verbe_s {
-    char forme_de_base[40];
     char forme_flechie[40];
 
 }node_verbe, *p_node_verbe;

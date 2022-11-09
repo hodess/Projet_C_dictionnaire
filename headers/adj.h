@@ -7,13 +7,14 @@
 
 typedef struct node_adj_s {
     char forme_flechie[40];
-    char genre[6];              //Mas Fem InvGen
-    char pluriel[5];            //PL SG InvPL InvSG
-    struct node_nom_s * next;
+    int genre;              //Mas = 1; Fem = 2; InvGen = 3
+    int pluriel;            //PL = 1; SG = 2; InvPL = 3; InvSG = 4
+    struct node_adj_s * next;
 
 }node_adj, *p_node_adj;
 
 p_node_adj searchAdj(char word, p_node_adj adj);      //retourne NULL si il n'existe pas
 
-void addAdj(char adding_word[40], p_node_adj spot, char genre[6], char pluriel[5]);
+void addAdj(char adding_word[40], p_node_adj spot, int genre, int pluriel);
+
 #endif //MAIN_C_ADJ_H
