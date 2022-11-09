@@ -10,19 +10,23 @@
 
 struct s_liste_lettre;
 
+typedef struct s_nom
+{
+    int a;
+}*p_nom;
+
 //definition de la structure qui va contenir des lettres et de nombreux elements en plus
 typedef struct s_node_letter
 {
     char lettre;
     int nb_enfant;
     struct s_liste_lettre* enfants;
-    // mots flechis
+    p_nom mots_flechis
 }t_node_letter,*p_node_letter;
 
 
 //prototye de mes definitions
 p_node_letter creation_dune_branche(char);
-int gestion_par_les_branches(char,int,p_node_letter);
-int gestion_de_mot(char[30],int ,p_node_letter);
+
 
 #endif //MAIN_C_NODE_LETTER_H

@@ -24,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/liste_lettre.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/liste_lettre.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/node_letter.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/node_letter.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Projet_C_dictionnaire.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Projet_C_dictionnaire.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liste_lettre.c" beforeDir="false" afterPath="$PROJECT_DIR$/liste_lettre.c" afterDir="false" />
@@ -103,6 +102,9 @@
       <workItem from="1667900278940" duration="679000" />
       <workItem from="1667907999061" duration="3633000" />
       <workItem from="1667920239006" duration="217000" />
+      <workItem from="1667935737754" duration="6000" />
+      <workItem from="1667939826465" duration="988000" />
+      <workItem from="1668015033936" duration="7749000" />
     </task>
     <servers />
   </component>

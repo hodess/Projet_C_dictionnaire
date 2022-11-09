@@ -11,33 +11,38 @@ p_liste_lettre creation_maillon_liste_lettre(struct s_node_letter* p)
     temp->suivant=NULL;
     temp->node_lettre=p;
     return temp;
-
 }
 
-//fonction qui sert a reché une lettre dans une liste
-int recherche_lettre(char lettre,p_liste_lettre liste,p_liste_lettre *pre)
+p_liste_lettre recherche_lettre(char lettre,p_liste_lettre liste)
 {
     p_liste_lettre p=liste;
-    while(p!=NULL) {
-        if (p->node_lettre->lettre == lettre) {
-            return 1;
-        } else if (p->node_lettre->lettre < lettre) {
-            *pre = p;
-            p = p->suivant;
-        } else {
-            return 0;
-        }
-    }
-    return 0;
-}
-
-void afficher_liste_lettre(p_liste_lettre liste)
-{
-    p_liste_lettre p=liste;
+    p_liste_lettre pre=NULL;
     while(p!=NULL)
     {
-        printf("%c\t",p->node_lettre->lettre);
-        p=p->suivant;
+        if(p->node_lettre->lettre==lettre)
+        {
+            return p;
+        }
+        else if(p->node_lettre->lettre<lettre)
+        {
+            pre=p;
+            p=p->suivant;
+        }
+        else
+        {
+            return pre;
+        }
     }
-    printf("\n");
+    return pre;
+}
+
+int recherche_mot(char mot[30],p_liste_lettre rac)
+{
+    p_node_letter pre;
+    int i=0;
+    int verif=1;
+    while(mot[i]!='\0' && verif)
+    {
+
+    }
 }

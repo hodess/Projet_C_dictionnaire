@@ -15,7 +15,8 @@ typedef struct s_liste_lettre
     struct s_liste_lettre *suivant;
 }t_liste_lettre,*p_liste_lettre;
 
-int recherche_lettre(char,p_liste_lettre,p_liste_lettre*);
+
 p_liste_lettre creation_maillon_liste_lettre(struct s_node_letter*);
-void afficher_liste_lettre(p_liste_lettre);
+int recherche_lettre(char,p_liste_lettre,p_liste_lettre*);
+
 #endif //MAIN_C_LISTE_LETTRE_H
