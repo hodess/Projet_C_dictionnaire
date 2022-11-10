@@ -12,14 +12,34 @@ void start()
         int ajout; //1= ajout_de_lettre ; 0 = recherche
         printf("ajoute ou recherche\n");
         scanf("%d", &ajout);
-        if (ajout == 2) {
+        if (ajout == 0) {
             break;
         }
 
 
         //tapé la lettre que l'on veut ajouté
-        char lettre[10];
-        printf("tape la lettre\n");
-        scanf(" %s", lettre);
+
+        int verif_mot;
+        char lettre[30];
+        while(ajout && lettre[0]!='0')
+        {
+            printf("tape la lettre\n");
+            scanf(" %s", lettre);
+            if (lettre[0]!='0')
+            {
+                ajout_dun_mot(lettre,rac);
+            }
+        }
+        while(ajout==2 && lettre[0]!='0')
+        {
+            printf("tape la lettre\n");
+            scanf(" %s", lettre);
+            if (lettre[0]!='0')
+            {
+                verif_mot = recherche_mot(lettre,rac);
+                printf("Verif mot = %d\n\n",verif_mot);
+            }
+        }
+
     }
 }
