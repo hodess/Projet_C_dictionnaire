@@ -4,6 +4,12 @@
 
 #include "node_letter.h"
 
+p_nom creation_struct_mot_flechis(char a)
+{
+    p_nom temp=(p_nom)malloc(sizeof(t_nom));
+    temp->caractere=a;
+    return temp;
+};
 
 p_node_letter creation_dune_branche(char lettre)
 {
@@ -65,6 +71,7 @@ p_nom ajout_dun_mot(char mot[30],p_node_letter rac)
         }
         i++;
     }
+    tree->mots_flechis= creation_struct_mot_flechis('A');
     return tree->mots_flechis;
 }
 
