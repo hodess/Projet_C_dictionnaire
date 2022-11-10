@@ -71,10 +71,14 @@ p_nom ajout_dun_mot(char mot[30],p_node_letter rac)
 int verif_mot_ajoute(char mot[30],p_node_letter rac)
 {
     int verif_recherche= recherche_mot(mot,rac);
-    if (verif_recherche==1)
+    if (verif_recherche==0)
     {
         printf("le mot s'ajoute\n");
         ajout_dun_mot(mot,rac);
+    }
+    else
+    {
+        printf("le mot existe deja\n");
     }
     return verif_recherche;
 }

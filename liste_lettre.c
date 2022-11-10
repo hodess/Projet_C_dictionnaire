@@ -17,10 +17,8 @@ p_liste_lettre recherche_lettre(char lettre,p_liste_lettre liste)
 {
     p_liste_lettre p=liste;
     p_liste_lettre pre=NULL;
-    printf("recherche\n");
     while(p!=NULL)
     {
-        printf("%p\n\n",p->node_lettre);
         //si le p est egale a la lettre je l'a renvoie
         if(p->node_lettre->lettre==lettre)
         {
@@ -38,7 +36,6 @@ p_liste_lettre recherche_lettre(char lettre,p_liste_lettre liste)
             return pre;
         }
     }
-    printf("%p\n\n",p);
     return pre;
 }
 
@@ -55,15 +52,19 @@ int recherche_mot(char mot[30],p_node_letter rac)
             return 0;
         }
         pro= recherche_lettre(mot[i],tree->enfants);
-        printf("enfant de %c nb enfant = %d : \t",tree->lettre,tree->nb_enfant);
-        afficher_liste_lettre(tree->enfants);
-        if(pro->node_lettre->lettre==mot[i])
-        {
-            tree=pro->node_lettre;
-        }
-        else
+        //printf("enfant de %c nb enfant = %d : \t",tree->lettre,tree->nb_enfant);
+        //afficher_liste_lettre(tree->enfants);
+        printf("pro = %p\n",pro);
+        if (pro==NULL)
         {
             return 0;
+        }
+        else {
+            if (pro->node_lettre->lettre == mot[i]) {
+                tree = pro->node_lettre;
+            } else {
+                return 0;
+            }
         }
         i++;
     }

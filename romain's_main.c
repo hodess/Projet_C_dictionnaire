@@ -43,7 +43,7 @@ void start()
 
         while (ajout==3 && lettre[0]!='0')
         {
-            printf("tape le mot a cherche\n");
+            printf("tape le mot a verifier et ajouter si possible\n");
             scanf(" %s", lettre);
             if (lettre[0]!='0')
             {
@@ -52,6 +52,5 @@ void start()
             }
         }
         lettre[0]='A';
-
     }
 }
