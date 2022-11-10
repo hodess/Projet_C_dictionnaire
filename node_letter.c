@@ -73,6 +73,7 @@ int verif_mot_ajoute(char mot[30],p_node_letter rac)
     int verif_recherche= recherche_mot(mot,rac);
     if (verif_recherche==1)
     {
+        printf("le mot s'ajoute\n");
         ajout_dun_mot(mot,rac);
     }
     return verif_recherche;

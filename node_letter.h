@@ -29,6 +29,6 @@ typedef struct s_node_letter
 p_node_letter creation_dune_branche(char);
 p_node_letter ajout_dune_lettre(char,struct s_liste_lettre*,p_node_letter);
 p_nom ajout_dun_mot(char[30],p_node_letter);
-
+int verif_mot_ajoute(char[30],p_node_letter);
 
 #endif //MAIN_C_NODE_LETTER_H
