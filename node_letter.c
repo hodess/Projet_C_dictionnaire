@@ -76,6 +76,7 @@ p_nom ajout_dun_mot(char mot[30],p_node_letter rac)
     }
     //a la fin on crée le mots flechis avec le mots que l'on vient d'ajouté
     tree->mots_flechis= creation_struct_mot_flechis('A');
+    printf("mot flechsis : %p\n",tree->mots_flechis);
     return tree->mots_flechis;
 }
 
