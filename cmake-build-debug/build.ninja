@@ -61,6 +61,18 @@ build CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj: C_COMPILER__Projet
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
 
+build CMakeFiles/Projet_C_dictionnaire.dir/lecture.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/Gigi/Documents/EFREI/L2-R/informatique/C/projet/Projet_C_dictionnaire/lecture.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\lecture.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+
+build CMakeFiles/Projet_C_dictionnaire.dir/couper.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/Gigi/Documents/EFREI/L2-R/informatique/C/projet/Projet_C_dictionnaire/couper.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\couper.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Projet_C_dictionnaire
@@ -69,7 +81,7 @@ build CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj: C_COMPILER__Projet
 #############################################
 # Link the executable Projet_C_dictionnaire.exe
 
-build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj
+build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/lecture.c.obj CMakeFiles/Projet_C_dictionnaire.dir/couper.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
