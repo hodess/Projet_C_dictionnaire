@@ -11,9 +11,10 @@
 struct s_liste_lettre;
 
 //definition de la structure pour le mots flechis
+
 typedef struct s_nom
 {
-    char caractere;
+    char test;
 }t_nom,*p_nom;
 
 //definition de la structure qui va contenir des lettres et de nombreux elements en plus
@@ -33,5 +34,5 @@ p_nom ajout_dun_mot(char[30],p_node_letter);
 int verif_mot_ajoute(char[30],p_node_letter);
 
 //definition temporaire
-p_nom creation_struct_mot_flechis(char a)
+p_nom creation_struct_mot_flechis(char a);
 #endif //MAIN_C_NODE_LETTER_H

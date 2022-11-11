@@ -13,6 +13,8 @@ p_liste_lettre creation_maillon_liste_lettre(p_node_letter p)
     return temp;
 }
 
+//cela sert a chercher une lettre dans une liste d'enfant
+//on retourne soit le bon pointeur soit le precedent pour faire un ajout de maniere simple
 p_liste_lettre recherche_lettre(char lettre,p_liste_lettre liste)
 {
     p_liste_lettre p=liste;
@@ -39,7 +41,8 @@ p_liste_lettre recherche_lettre(char lettre,p_liste_lettre liste)
     return pre;
 }
 
-int recherche_mot(char mot[30],p_node_letter rac)
+//cela sert a rechecher un mot et retourne la derniere cellule pour que 'lon puisse garder le mot flechis
+p_node_letter recherche_mot(char mot[30],p_node_letter rac)
 {
     p_liste_lettre pro;
     p_node_letter tree=rac;
@@ -49,21 +52,20 @@ int recherche_mot(char mot[30],p_node_letter rac)
         //si une node ne contient aucun enfant alors on dit qu'elle ne peut pas contenir le mot
         if (tree->nb_enfant==0)
         {
-            return 0;
+            return NULL;
         }
         pro= recherche_lettre(mot[i],tree->enfants);
-        //printf("enfant de %c nb enfant = %d : \t",tree->lettre,tree->nb_enfant);
-        //afficher_liste_lettre(tree->enfants);
-        printf("pro = %p\n",pro);
+        //cela voudrais dire que lettre que l'onj recherche une lettre plus petite que la plus petite de la liste. En d'autre terme on cherche une lettre que l'on a pas
         if (pro==NULL)
         {
-            return 0;
+            return NULL;
         }
         else {
+            //si la lettre alors on continue avec la prochaine
             if (pro->node_lettre->lettre == mot[i]) {
                 tree = pro->node_lettre;
             } else {
-                return 0;
+                return NULL;
             }
         }
         i++;
@@ -71,15 +73,16 @@ int recherche_mot(char mot[30],p_node_letter rac)
     //si il contient des mots alors le mots existe
     if(tree->mots_flechis!=NULL)
     {
-        return 1;
+        return tree;
     }
     //si il en contient pas alors le mots n'existe pas
     else
     {
-        return 2;
+        return NULL;
     }
 }
 
+//cela serta afficher les enfants
 void afficher_liste_lettre(p_liste_lettre liste)
 {
     p_liste_lettre p=liste;

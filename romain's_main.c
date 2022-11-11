@@ -15,11 +15,12 @@ void start()
         if (ajout == 0) {
             break;
         }
+        printf("");
 
 
         //tapé la lettre que l'on veut ajouté
 
-        int verif_mot;
+        p_node_letter verif_mot;
         char lettre[30];
         while(ajout==1 && lettre[0]!='0')
         {
@@ -37,7 +38,15 @@ void start()
             if (lettre[0]!='0')
             {
                 verif_mot = recherche_mot(lettre,rac);
-                printf("Verif mot = %d\n\n",verif_mot);
+                if (verif_mot==NULL)
+                {
+                    printf("le mot existe pas\n");
+                }
+                else
+                {
+                    printf("le mot existe\n");
+                }
+
             }
         }
 
