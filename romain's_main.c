@@ -53,7 +53,8 @@ void start()
         if(ajout==3)
         {
             p_node_letter node_aleatoire = aleatoire_mot(rac);
-            printf("mot trouvé : %p , %c\n",node_aleatoire->mots_flechis,node_aleatoire->lettre);
+            aleatoire_mot_flechis(node_aleatoire->mots_flechis);
+            printf("mot trouvé : %p\nle mot de base : %s\n",node_aleatoire->mots_flechis,node_aleatoire->mots_flechis->mot_de_base);
         }
         lettre[0]='A';
     }

@@ -5,10 +5,17 @@
 #include "node_letter.h"
 
 //fonction temporaire
-p_nom creation_struct_mot_flechis(char a)
+p_nom creation_struct_mot_flechis(char mot[30])
 {
     p_nom temp=(p_nom)malloc(sizeof(t_nom));
-    temp->test=a;
+    int i=0;
+    while(mot[i]!='\0')
+    {
+        temp->mot_de_base[i]=mot[i];
+        i++;
+    }
+    temp->mot_de_base[i]='\0';
+    temp->nb_mot_flechis=1;
     return temp;
 };
 
@@ -75,7 +82,7 @@ p_nom ajout_dun_mot(char mot[30],p_node_letter rac)
         i++;
     }
     //a la fin on crée le mots flechis avec le mots que l'on vient d'ajouté
-    tree->mots_flechis= creation_struct_mot_flechis('A');
+    tree->mots_flechis= creation_struct_mot_flechis(mot);
     printf("mot flechsis : %p\n",tree->mots_flechis);
     return tree->mots_flechis;
 }
@@ -95,7 +102,8 @@ int verif_mot_ajoute(char mot[30],p_node_letter rac)
     else
     {
         //essayer de le rajouter au mots flechis
-        printf("mot flechis = %p\n",verif_recherche->mots_flechis);
+        verif_recherche->mots_flechis->nb_mot_flechis+=1;
+        printf("mot flechis = %p de %d\n",verif_recherche->mots_flechis,verif_recherche->mots_flechis->nb_mot_flechis);
         printf("le mot existe deja\n");
         return 0;
     }

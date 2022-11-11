@@ -4,6 +4,13 @@
 
 #include "aleatoire.h"
 
+char* aleatoire_mot_flechis(p_nom mot_flechis)
+{
+    int aleatoire=rand()%mot_flechis->nb_mot_flechis;
+    printf("%d\n",aleatoire);
+    //se balader dans le mot flechis
+}
+
 //cette fonction sert a ressortir un enfant de maniere aleatoire
 p_node_letter aleatoire_lettre(p_node_letter tree)
 {

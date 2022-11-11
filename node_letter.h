@@ -14,7 +14,9 @@ struct s_liste_lettre;
 
 typedef struct s_nom
 {
-    char test;
+    char mot_de_base[30];
+    int nb_mot_flechis;
+    //
 }t_nom,*p_nom;
 
 //definition de la structure qui va contenir des lettres et de nombreux elements en plus
@@ -34,5 +36,5 @@ p_nom ajout_dun_mot(char[30],p_node_letter);
 int verif_mot_ajoute(char[30],p_node_letter);
 
 //definition temporaire
-p_nom creation_struct_mot_flechis(char a);
+p_nom creation_struct_mot_flechis(char[30]);
 #endif //MAIN_C_NODE_LETTER_H

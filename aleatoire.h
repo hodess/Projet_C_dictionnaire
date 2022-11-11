@@ -10,6 +10,7 @@
 
 p_node_letter aleatoire_lettre(p_node_letter);
 p_node_letter aleatoire_mot(p_node_letter);
+char* aleatoire_mot_flechis(p_nom );
 
 
 #endif //MAIN_C_ALEATOIRE_H
