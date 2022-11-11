@@ -7,6 +7,6 @@
 void start()
 {
         FILE* text;
-        text = fopen("dico_10_lignes.txt","r");
+        text = fopen("dictionnaire_non_accentue.txt","r");
         lecture_fichier(text);
 }

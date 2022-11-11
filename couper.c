@@ -7,8 +7,8 @@
 void sinder_petite_chaine(char* fichier)
 {
 
-    char* subligne[6];
-    char * separateur = "\t:+";
+    char* subligne[8];
+    char * separateur = "\t:";
     int i =0;
     subligne[i] = strtok(fichier,separateur);
     while ( subligne[i] != NULL)
@@ -16,20 +16,48 @@ void sinder_petite_chaine(char* fichier)
         i++;
         subligne[i] = strtok(NULL,separateur);
     }
-    /*for (i =0; i< 6;i++)
+
+    char* subligne_final[6];
+    for(int x =0 ; x < 3; x++)
     {
-        if (subligne[i] != NULL)
-        {
-            printf(" %s\t\t",subligne[i]);
-            int y =0;
-            while(subligne[i][y] != '\0')
-            {
-                printf("%c",subligne[i][y]);
-                y++;
-            }
-            printf("\n");
+        subligne_final[x] = subligne[x];
+        printf("subligne final = %s\n",subligne_final[x]);
+    }
+    for (int y = i-1; y>=3; y--) {
+        int w = 0;
+        char *temp[8];
+        printf("subligne = %s\n", subligne[y]);
+        temp[w] = strtok(subligne[y], "+");
+        while (temp[w] != NULL) {
+            printf("temp = %s\n", temp[w]);
+            w++;
+            temp[w] = strtok(NULL, "+");
+
+
         }
+    }
+
+        /*for (int v = 0; v < 3; v++)
+        {
+            if(temp[v] !=NULL)
+            {
+                subligne_final[3+v] = temp[v];
+                printf("subfinal = %s\n",subligne_final[3+v]);
+            }
+
+        }
+
+
+        for (int v =0; v< 8;v++)
+        {
+            if (subligne_final[v] != NULL)
+            {
+                printf(" %s\t\t", subligne_final[v]);
+            }
+        }
+        printf("\n\n\n");
     }*/
+
 
     //ajouter la ligne
 }

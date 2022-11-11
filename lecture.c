@@ -17,5 +17,6 @@ void lecture_fichier(FILE*text)
     {
         printf("fichier pas ouvert");
     }
+    printf("fini");
     fclose(text);
 }
