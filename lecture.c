@@ -5,10 +5,10 @@
 #include "lecture.h"
 void lecture_fichier(FILE*text)
 {
-    char fichier[50];
+    char fichier[99];
     if (text != NULL)
     {
-        while(fgets(fichier,50,text) != NULL)
+        while(fgets(fichier,99,text) != NULL)
         {
             sinder_petite_chaine(fichier);
         }
@@ -17,6 +17,6 @@ void lecture_fichier(FILE*text)
     {
         printf("fichier pas ouvert");
     }
-    printf("fini");
+    printf("fini lecture\n");
     fclose(text);
 }

@@ -9,4 +9,5 @@ void start()
         FILE* text;
         text = fopen("dictionnaire_non_accentue.txt","r");
         lecture_fichier(text);
+        printf("Fini");
 }
