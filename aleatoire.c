@@ -7,7 +7,7 @@
 char* aleatoire_mot_flechis(p_nom mot_flechis)
 {
     int aleatoire=rand()%mot_flechis->nb_mot_flechis;
-    printf("%d\n",aleatoire);
+    printf("%d\n",mot_flechis->nb_mot_flechis);
     //se balader dans le mot flechis
 }
 
@@ -16,7 +16,6 @@ p_node_letter aleatoire_lettre(p_node_letter tree)
 {
     //compter le nombre d'enfant pour savoir notre nombre de posibilité
     int nb_possibilité=tree->nb_enfant;
-    printf("nb possibilite = %d\n",nb_possibilité);
     int indice = (rand()%nb_possibilité);
     //se palcer au bonne endroit en fonction du chiffre aleatoire recu
     p_liste_lettre next=tree->enfants;
@@ -40,7 +39,7 @@ p_node_letter aleatoire_mot(p_node_letter rac)
         }
         else
         {
-            aleatoire = (rand() % 3);
+            aleatoire = (rand() % 20);
             if(aleatoire == 0 && tree->mots_flechis!=NULL)
             {
                 return tree;

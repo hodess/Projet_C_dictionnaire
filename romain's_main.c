@@ -4,14 +4,13 @@
 
 #include "romain's_main.h"
 
-void start_romain()
+//0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
+void start_romain(p_node_letter* tab_rac)
 {
-    srand(time(NULL));
-    p_node_letter rac= creation_dune_branche('A');
     while (1) {
         //savoir si on veut l'ajouté ou la recherché
         int ajout; //1= ajout_de_lettre ; 0 = recherche
-        printf("1.ajout d'un mot avec verification\n2.recherche \n3.genere un mot aleatoire\n");
+        printf("\n\n1.ajout d'un mot avec verification\n2.recherche \n3.genere un mot aleatoire\n");
         scanf("%d", &ajout);
         if (ajout == 0) {
             break;
@@ -25,12 +24,19 @@ void start_romain()
         char lettre[30];
         while(ajout==1 && lettre[0]!='0')
         {
-            printf("tape le mot a ajoute\n");
-            scanf(" %s", lettre);
-            if (lettre[0]!='0')
+            int type;
+            printf("quelle est le type\n1.verbe\n2.Adv\n3.nom\n4.adjectif\n");
+            scanf("%d",&type);
+            char mot[30];
+            printf("donner le mots de base\n");
+            scanf("%s",mot);
+            p_node_letter temp;
+            temp=recherche_mot(mot,tab_rac[type-1]);
+            if(temp==NULL)
             {
-                verif_mot_ajoute(lettre,rac);
+                temp= ajout_dun_mot(mot,tab_rac[type-1]);
             }
+            //ajouter les caracteristique
         }
         while(ajout==2 && lettre[0]!='0')
         {
@@ -38,24 +44,57 @@ void start_romain()
             scanf(" %s", lettre);
             if (lettre[0]!='0')
             {
-                verif_mot = recherche_mot(lettre,rac);
-                if (verif_mot==NULL)
+                for(int i =0;i<4;i++)
                 {
-                    printf("le mot existe pas\n");
+                    verif_mot = recherche_mot(lettre,tab_rac[i]);
+                    if (verif_mot==NULL)
+                    {
+                        printf("le mot existe pas\n");
+                    }
+                    else
+                    {
+                        printf("le mot existe\t");
+                        printf("%d\n",verif_mot->mots_flechis->nb_mot_flechis);
+                    }
                 }
-                else
-                {
-                    printf("le mot existe\n");
-                }
-
             }
         }
         if(ajout==3)
         {
-            p_node_letter node_aleatoire = aleatoire_mot(rac);
-            aleatoire_mot_flechis(node_aleatoire->mots_flechis);
-            printf("mot trouvé : %p\nle mot de base : %s\n",node_aleatoire->mots_flechis,node_aleatoire->mots_flechis->mot_de_base);
+            int forme;
+            printf("forme 1 ou 2\n");
+            scanf("%d",&forme);
+            if(forme==1)
+            {
+                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(4*(sizeof(p_node_letter)));
+                p_node_aleatoire[0]=aleatoire_mot(tab_rac[2]);
+                p_node_aleatoire[1]=aleatoire_mot(tab_rac[3]);
+                p_node_aleatoire[2]=aleatoire_mot(tab_rac[0]);
+                p_node_aleatoire[3]=aleatoire_mot(tab_rac[2]);
+                for(int i=0;i<4;i++)
+                {
+                    printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
+                }
+                int taille=4;
+            }
+            if(forme==2)
+            {
+                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(5*(sizeof(p_node_letter)));
+                p_node_aleatoire[0]=aleatoire_mot(tab_rac[2]);
+                p_node_aleatoire[1]=aleatoire_mot(tab_rac[3]);
+                p_node_aleatoire[2]=aleatoire_mot(tab_rac[3]);
+                p_node_aleatoire[3]=aleatoire_mot(tab_rac[2]);
+                p_node_aleatoire[4]=aleatoire_mot(tab_rac[0]);
+                for(int i=0;i<5;i++)
+                {
+                    printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
+                    if(i==1)
+                    {
+                        printf("qui\t");
+                    }
+                }
+                int taille=5;
+            }
         }
-        lettre[0]='A';
     }
 }

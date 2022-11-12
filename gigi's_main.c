@@ -6,9 +6,12 @@
 
 void start_gigi()
 {
+    srand(time(NULL));
     FILE* text;
     text = fopen("dictionnaire_non_accentue.txt","r");
-    lecture_fichier(text);
-    printf("Fini");
+    p_node_letter* tab_rac;
+    tab_rac=lecture_fichier(text);
+    printf("Fini\n");
+    start_romain(tab_rac);
 }
 

@@ -4,7 +4,7 @@
 
 #include "couper.h"
 
-void sinder_petite_chaine(char* fichier)
+void sinder_petite_chaine(char* fichier,p_node_letter* tab_rac)
 {
 
     char* subligne[8];
@@ -22,17 +22,19 @@ void sinder_petite_chaine(char* fichier)
     for(int x =0 ; x < 3; x++)
     {
         subligne_final[x] = subligne[x];
-        printf("subligne final = %s\n",subligne_final[x]);
     }
     for (int y = i-1; y>=3; y--) {
         int w = 0;
-        printf("subligne = %s\n", subligne[y]);
         temp[w] = strtok(subligne[y], "+");
         while (temp[w] != NULL) {
-            printf("temp = %s\n", temp[w]);
             w++;
             temp[w] = strtok(NULL, "+");
         }
+        triage_arbre_et_ajout(subligne_final,temp,tab_rac);
+    }
+    if(i==3)
+    {
+        triage_arbre_et_ajout(subligne_final,NULL,tab_rac);
     }
 }
 //ajouter la ligne

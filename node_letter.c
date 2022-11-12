@@ -52,7 +52,7 @@ p_node_letter ajout_dune_lettre(char lettre,p_liste_lettre pre,p_node_letter anc
 }
 
 //cela sert a ajouté un mot on ne fait pas de verification
-p_nom ajout_dun_mot(char mot[30],p_node_letter rac)
+p_node_letter ajout_dun_mot(char mot[30],p_node_letter rac)
 {
     int i=0;
     p_node_letter tree=rac;
@@ -83,28 +83,62 @@ p_nom ajout_dun_mot(char mot[30],p_node_letter rac)
     }
     //a la fin on crée le mots flechis avec le mots que l'on vient d'ajouté
     tree->mots_flechis= creation_struct_mot_flechis(mot);
-    printf("mot flechsis : %p\n",tree->mots_flechis);
-    return tree->mots_flechis;
+    return tree;
 }
 
 //verifier si on doit ajouter au mot flechis ou dans l'arbre.
-int verif_mot_ajoute(char mot[30],p_node_letter rac)
+p_node_letter verif_mot_ajoute(char mot[30],p_node_letter rac)
 {
     p_node_letter verif_recherche= recherche_mot(mot,rac);
+    p_nom temp;
     //si le mot existe pas on ajoute le mot
     if (verif_recherche==NULL)
     {
-        printf("le mot s'ajoute\n");
-        ajout_dun_mot(mot,rac);
-        return 1;
+        temp=ajout_dun_mot(mot,rac);
+        return temp;
     }
         //si il existe on va l'ajouter au mots flechis
     else
     {
         //essayer de le rajouter au mots flechis
         verif_recherche->mots_flechis->nb_mot_flechis+=1;
-        printf("mot flechis = %p de %d\n",verif_recherche->mots_flechis,verif_recherche->mots_flechis->nb_mot_flechis);
-        printf("le mot existe deja\n");
-        return 0;
+        return verif_recherche;
     }
+}
+
+
+//0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
+void triage_arbre_et_ajout(char** mot,char** type,p_node_letter* tab_rac)
+{
+  p_node_letter temp;
+
+  if(mot[2][0]=='V')
+  {
+      verif_mot_ajoute(mot[1],tab_rac[0]);
+  }
+  else if(mot[2][0]=='N')
+  {
+      verif_mot_ajoute(mot[1],tab_rac[2]);
+  }
+  else if(mot[2][0]=='A')
+  {
+      if(mot[2][2]=='j')
+      {
+          verif_mot_ajoute(mot[1],tab_rac[3]);
+      }
+      else if(mot[2][2]=='v')
+      {
+          verif_mot_ajoute(mot[1],tab_rac[1]);
+      }
+      else
+      {
+          temp=NULL;
+          printf("impossible d'ajouté le mot :\t %s\t%s\t %s\n",mot[0],mot[1],mot[2]);
+      }
+  }
+  else
+  {
+      printf("impossible d'ajouté le mot :\t %s\t%s\t %s\n",mot[0],mot[1],mot[2]);
+      temp=NULL;
+  }
 }
