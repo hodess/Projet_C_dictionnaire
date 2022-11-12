@@ -1,4 +1,8 @@
 # ninja log v5
-5	209	6885811175686156	CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj	fe3676ff79754caf
+12	899	6899229890928502	CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj	fe3676ff79754caf
+119	880	6899229890928502	CMakeFiles/Projet_C_dictionnaire.dir/functions/adj.c.obj	a809ee096d14f58
 340	926	6885811238474511	Projet_C_dictionnaire.exe	7481d886edd642eb
+160	892	6899229890928502	CMakeFiles/Projet_C_dictionnaire.dir/functions/adv.c.obj	6cbe52831d623d82
 3	338	6885811232516171	CMakeFiles/Projet_C_dictionnaire.dir/nolan.c.obj	cb47db0c2a1605db
+185	906	6899229890928502	CMakeFiles/Projet_C_dictionnaire.dir/functions/ver.c.obj	330095dd488ddbdf
+64	914	6899229890986593	CMakeFiles/Projet_C_dictionnaire.dir/functions/nom.c.obj	72ce4338dcbdf4dc

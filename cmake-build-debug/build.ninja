@@ -73,12 +73,6 @@ build CMakeFiles/Projet_C_dictionnaire.dir/functions/adv.c.obj: C_COMPILER__Proj
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir\functions
 
-build CMakeFiles/Projet_C_dictionnaire.dir/functions/ver.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/moraz/OneDrive/Documents/EFREI/C/generateur$ de$ phrase/Projet_C_dictionnaire/functions/ver.c || cmake_object_order_depends_target_Projet_C_dictionnaire
-  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\functions\ver.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
-  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir\functions
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Projet_C_dictionnaire
@@ -87,7 +81,7 @@ build CMakeFiles/Projet_C_dictionnaire.dir/functions/ver.c.obj: C_COMPILER__Proj
 #############################################
 # Link the executable Projet_C_dictionnaire.exe
 
-build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/nom.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/adj.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/adv.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/ver.c.obj
+build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/nom.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/adj.c.obj CMakeFiles/Projet_C_dictionnaire.dir/functions/adv.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir

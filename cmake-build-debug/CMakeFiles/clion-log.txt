@@ -1,4 +1,13 @@
 "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Users\moraz\OneDrive\Documents\EFREI\C\generateur de phrase\Projet_C_dictionnaire" -B "C:\Users\moraz\OneDrive\Documents\EFREI\C\generateur de phrase\Projet_C_dictionnaire\cmake-build-debug"
 -- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/moraz/OneDrive/Documents/EFREI/C/generateur de phrase/Projet_C_dictionnaire/cmake-build-debug
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    functions/ver.cpp
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: Projet_C_dictionnaire
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
