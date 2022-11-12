@@ -13,7 +13,7 @@ typedef struct node_adj_s {
 
 }node_adj, *p_node_adj;
 
-p_node_adj searchAdj(char word, p_node_adj adj);      //retourne NULL si il n'existe pas
+p_node_adj searchAdj(int genre, int pluriel, p_node_adj adj);      //retourne NULL si il n'existe pas
 
 void addAdj(char adding_word[40], p_node_adj spot, int genre, int pluriel);
 

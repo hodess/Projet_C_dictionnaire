@@ -6,8 +6,8 @@
 #include <stdio.h>
 #include <string.h>
 
-p_node_nom searchNom(char word, p_node_nom nom){
-    while (word != * nom->forme_flechie){
+p_node_nom searchNom(int genre, int pluriel, p_node_nom nom){
+    while (genre != nom->genre || pluriel != nom->pluriel){
         if (nom->next == NULL) {
             return NULL;
         }

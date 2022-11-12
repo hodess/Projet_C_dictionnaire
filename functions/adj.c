@@ -6,8 +6,8 @@
 #include <stdio.h>
 #include <string.h>
 
-p_node_adj searchAdj(char word, p_node_adj adj){
-    while (word != * adj->forme_flechie){
+p_node_adj searchAdj(int genre, int pluriel, p_node_adj adj){
+    while (genre != adj->genre || pluriel != adj->pluriel){
         if (adj->next == NULL) {
             return NULL;
         }

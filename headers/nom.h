@@ -13,7 +13,7 @@ typedef struct node_nom_s {
 
 }node_nom, *p_node_nom;
 
-p_node_nom searchNom(char word, p_node_nom nom);      //retourne NULL si il n'existe pas
+p_node_nom searchNom(int genre, int pluriel, p_node_nom nom);      //retourne NULL si il n'existe pas
 
 void addNom(char adding_word[40], p_node_nom spot, int genre, int pluriel);
 
