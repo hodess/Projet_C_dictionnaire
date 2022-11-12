@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "gigi's_main.h"
 
 int main() {
-    printf("Hello, World!\n");
+    start();
     return 0;
 }
