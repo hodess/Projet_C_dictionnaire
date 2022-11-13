@@ -4,15 +4,25 @@
 
 #include "aleatoire.h"
 
-char* aleatoire_mot_flechis(p_nom mot_flechis)
+int* aleatoire_mot_flechis(p_flechis mot_flechis)
 {
     int aleatoire=rand()%mot_flechis->nb_mot_flechis;
     printf("%d\n",mot_flechis->nb_mot_flechis);
+    p_node_nom temp=mot_flechis->mot_flechis_nom;
     //se balader dans le mot flechis
+    for(int i=0;i<aleatoire;i++)
+    {
+        temp=temp->next;
+    }
+
+    int* type_mot = (int*) malloc(2*(sizeof (int)));
+    type_mot[0]=temp->genre;
+    type_mot[1]=temp->pluriel;
+    return type_mot;
 }
 
 //cette fonction sert a ressortir un enfant de maniere aleatoire
-p_node_letter_nom aleatoire_lettre_nom(p_node_letter_nom tree)
+p_node_letter aleatoire_lettre_nom(p_node_letter tree)
 {
     //compter le nombre d'enfant pour savoir notre nombre de posibilité
     int nb_possibilité=tree->nb_enfant;
@@ -27,10 +37,10 @@ p_node_letter_nom aleatoire_lettre_nom(p_node_letter_nom tree)
 }
 
 //cette fonction a avoir un mot flechis aleatoir retourné
-p_node_letter_nom aleatoire_mot_nom(p_node_letter_nom rac)
+p_node_letter aleatoire_mot_nom(p_node_letter rac)
 {
     int aleatoire;
-    p_node_letter_nom tree = rac;
+    p_node_letter tree = rac;
     while(1)
     {
         if(tree->nb_enfant==0)
