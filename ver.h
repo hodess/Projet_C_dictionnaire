@@ -7,9 +7,9 @@
 typedef struct node_ver_s {
     char forme_flechie[40];
     int conjugaison;        //Infinitif () = 1
-    //Indicatif présent (IPre) = 2
-    //Imparfait de l'indicatif (IImp) = 3
-    //Présent du subjonctif (SPre) = 4
+                            //Indicatif présent (IPre) = 2
+                            //Imparfait de l'indicatif (IImp) = 3
+                            //Présent du subjonctif (SPre) = 4
     int genre;              //Mas = 1; Fem = 2; InvGen = 3
     int pluriel;            //PL = 1; SG = 2; InvPL = 3; InvSG = 4
     struct node_ver_s * next;
