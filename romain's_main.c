@@ -35,7 +35,13 @@ void start_romain(p_node_letter* tab_rac)
             if(temp==NULL)
             {
                 temp= ajout_dun_mot(mot,tab_rac[type-1]);
+                printf("votre mot existait pas\t");
             }
+            else
+            {
+                printf("le mot existait deja\t");
+            }
+            printf("votre mot = %s\n",temp->mots_flechis->mot_de_base);
             //ajouter les caracteristique
         }
         while(ajout==2 && lettre[0]!='0')

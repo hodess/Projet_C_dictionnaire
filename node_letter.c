@@ -90,7 +90,7 @@ p_node_letter ajout_dun_mot(char mot[30],p_node_letter rac)
 p_node_letter verif_mot_ajoute(char mot[30],p_node_letter rac)
 {
     p_node_letter verif_recherche= recherche_mot(mot,rac);
-    p_nom temp;
+    p_node_letter temp;
     //si le mot existe pas on ajoute le mot
     if (verif_recherche==NULL)
     {
