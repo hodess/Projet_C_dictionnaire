@@ -8,10 +8,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "adj.h"
-#include "adv.h"
-#include "nom.h"
-#include "ver.h"
+#include "gere_mot_flechis/header/adj.h"
+#include "gere_mot_flechis/header/adv.h"
+#include "gere_mot_flechis/header/nom.h"
+#include "gere_mot_flechis/header/ver.h"
 
 struct s_liste_lettre;
 

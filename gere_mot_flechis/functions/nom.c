@@ -2,7 +2,7 @@
 // Created by moraz on 08/11/2022.
 //
 
-#include "nom.h"
+#include "../header/nom.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
