@@ -12,7 +12,7 @@ char* aleatoire_mot_flechis(p_nom mot_flechis)
 }
 
 //cette fonction sert a ressortir un enfant de maniere aleatoire
-p_node_letter aleatoire_lettre(p_node_letter tree)
+p_node_letter_nom aleatoire_lettre_nom(p_node_letter_nom tree)
 {
     //compter le nombre d'enfant pour savoir notre nombre de posibilité
     int nb_possibilité=tree->nb_enfant;
@@ -27,10 +27,10 @@ p_node_letter aleatoire_lettre(p_node_letter tree)
 }
 
 //cette fonction a avoir un mot flechis aleatoir retourné
-p_node_letter aleatoire_mot(p_node_letter rac)
+p_node_letter_nom aleatoire_mot_nom(p_node_letter_nom rac)
 {
     int aleatoire;
-    p_node_letter tree = rac;
+    p_node_letter_nom tree = rac;
     while(1)
     {
         if(tree->nb_enfant==0)
@@ -50,7 +50,7 @@ p_node_letter aleatoire_mot(p_node_letter rac)
             }
             else
             {
-                tree= aleatoire_lettre(tree);
+                tree= aleatoire_lettre_nom(tree);
             }
         }
     }

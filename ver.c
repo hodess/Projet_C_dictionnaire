@@ -2,7 +2,7 @@
 // Created by moraz on 12/11/2022.
 //
 
-#include "../headers/ver.h"
+#include "ver.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

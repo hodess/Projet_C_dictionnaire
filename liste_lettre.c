@@ -5,7 +5,7 @@
 #include "liste_lettre.h"
 
 //fonciton qui sert a crée un maillon d'une liste de lettre
-p_liste_lettre creation_maillon_liste_lettre(p_node_letter p)
+p_liste_lettre creation_maillon_liste_lettre(p_node_letter_nom p)
 {
     p_liste_lettre temp=(p_liste_lettre) malloc(sizeof(t_liste_lettre));
     temp->suivant=NULL;
@@ -42,10 +42,10 @@ p_liste_lettre recherche_lettre(char lettre,p_liste_lettre liste)
 }
 
 //cela sert a rechecher un mot et retourne la derniere cellule pour que 'lon puisse garder le mot flechis
-p_node_letter recherche_mot(char mot[30],p_node_letter rac)
+p_node_letter_nom recherche_mot(char mot[30], p_node_letter_nom rac)
 {
     p_liste_lettre pro;
-    p_node_letter tree=rac;
+    p_node_letter_nom tree=rac;
     int i=0;
     while(mot[i]!='\0')
     {

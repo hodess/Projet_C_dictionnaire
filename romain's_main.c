@@ -5,7 +5,7 @@
 #include "romain's_main.h"
 
 //0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
-void start_romain(p_node_letter* tab_rac)
+void start_romain(p_node_letter_nom* tab_rac)
 {
     while (1) {
         //savoir si on veut l'ajouté ou la recherché
@@ -20,7 +20,7 @@ void start_romain(p_node_letter* tab_rac)
 
         //tapé la lettre que l'on veut ajouté
 
-        p_node_letter verif_mot;
+        p_node_letter_nom verif_mot;
         char lettre[30];
         while(ajout==1 && lettre[0]!='0')
         {
@@ -30,7 +30,7 @@ void start_romain(p_node_letter* tab_rac)
             char mot[30];
             printf("donner le mots de base\n");
             scanf("%s",mot);
-            p_node_letter temp;
+            p_node_letter_nom temp;
             temp=recherche_mot(mot,tab_rac[type-1]);
             if(temp==NULL)
             {
@@ -72,11 +72,11 @@ void start_romain(p_node_letter* tab_rac)
             scanf("%d",&forme);
             if(forme==1)
             {
-                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(4*(sizeof(p_node_letter)));
-                p_node_aleatoire[0]=aleatoire_mot(tab_rac[2]);
-                p_node_aleatoire[1]=aleatoire_mot(tab_rac[3]);
-                p_node_aleatoire[2]=aleatoire_mot(tab_rac[0]);
-                p_node_aleatoire[3]=aleatoire_mot(tab_rac[2]);
+                p_node_letter_nom* p_node_aleatoire=(p_node_letter_nom*) malloc(4 * (sizeof(p_node_letter_nom)));
+                p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
+                p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
+                p_node_aleatoire[2]= aleatoire_mot_nom(tab_rac[0]);
+                p_node_aleatoire[3]= aleatoire_mot_nom(tab_rac[2]);
                 for(int i=0;i<4;i++)
                 {
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
@@ -85,12 +85,12 @@ void start_romain(p_node_letter* tab_rac)
             }
             if(forme==2)
             {
-                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(5*(sizeof(p_node_letter)));
-                p_node_aleatoire[0]=aleatoire_mot(tab_rac[2]);
-                p_node_aleatoire[1]=aleatoire_mot(tab_rac[3]);
-                p_node_aleatoire[2]=aleatoire_mot(tab_rac[3]);
-                p_node_aleatoire[3]=aleatoire_mot(tab_rac[2]);
-                p_node_aleatoire[4]=aleatoire_mot(tab_rac[0]);
+                p_node_letter_nom* p_node_aleatoire=(p_node_letter_nom*) malloc(5 * (sizeof(p_node_letter_nom)));
+                p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
+                p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
+                p_node_aleatoire[2]= aleatoire_mot_nom(tab_rac[3]);
+                p_node_aleatoire[3]= aleatoire_mot_nom(tab_rac[2]);
+                p_node_aleatoire[4]= aleatoire_mot_nom(tab_rac[0]);
                 for(int i=0;i<5;i++)
                 {
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);

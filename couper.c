@@ -4,7 +4,7 @@
 
 #include "couper.h"
 
-void sinder_petite_chaine(char* fichier,p_node_letter* tab_rac)
+void sinder_petite_chaine(char* fichier, p_node_letter_nom* tab_rac)
 {
 
     char* subligne[8];

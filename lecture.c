@@ -3,11 +3,11 @@
 //
 
 #include "lecture.h"
-p_node_letter* lecture_fichier(FILE*text)
+p_node_letter_nom* lecture_fichier(FILE*text)
 {
 
     //0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
-    p_node_letter* tab_rac=(p_node_letter*)malloc(4*(sizeof (p_node_letter)));
+    p_node_letter_nom* tab_rac=(p_node_letter_nom*)malloc(4 * (sizeof (p_node_letter_nom)));
     for(int i=0;i<4;i++)
     {
         tab_rac[i]= creation_dune_branche('A');

@@ -2,7 +2,7 @@
 // Created by romai on 03/11/2022.
 //
 
-#include "node_letter.h"
+#include "node_letter_nom.h"
 
 //fonction temporaire
 p_nom creation_struct_mot_flechis(char mot[30])
@@ -20,9 +20,9 @@ p_nom creation_struct_mot_flechis(char mot[30])
 };
 
 //cela sert a crée une branch de l'arbre
-p_node_letter creation_dune_branche(char lettre)
+p_node_letter_nom creation_dune_branche(char lettre)
 {
-    p_node_letter node=(p_node_letter) malloc(sizeof(t_node_letter));
+    p_node_letter_nom node=(p_node_letter_nom) malloc(sizeof(t_node_letter_nom));
     node->enfants=NULL;
     node->lettre=lettre;
     node->nb_enfant=0;
@@ -30,9 +30,9 @@ p_node_letter creation_dune_branche(char lettre)
     return node;
 }
 
-p_node_letter ajout_dune_lettre(char lettre,p_liste_lettre pre,p_node_letter ancienne_lettre)
+p_node_letter_nom ajout_dune_lettre(char lettre, p_liste_lettre pre, p_node_letter_nom ancienne_lettre)
 {
-    p_node_letter temp_lettre = creation_dune_branche(lettre);
+    p_node_letter_nom temp_lettre = creation_dune_branche(lettre);
     p_liste_lettre temp_liste = creation_maillon_liste_lettre(temp_lettre);
     ancienne_lettre->nb_enfant+=1;
     //on gere la liste soit de la tete si le precedent est null
@@ -52,10 +52,10 @@ p_node_letter ajout_dune_lettre(char lettre,p_liste_lettre pre,p_node_letter anc
 }
 
 //cela sert a ajouté un mot on ne fait pas de verification
-p_node_letter ajout_dun_mot(char mot[30],p_node_letter rac)
+p_node_letter_nom ajout_dun_mot(char mot[30], p_node_letter_nom rac)
 {
     int i=0;
-    p_node_letter tree=rac;
+    p_node_letter_nom tree=rac;
     p_liste_lettre pre=NULL;
     while (mot[i]!='\0')
     {
@@ -87,10 +87,10 @@ p_node_letter ajout_dun_mot(char mot[30],p_node_letter rac)
 }
 
 //verifier si on doit ajouter au mot flechis ou dans l'arbre.
-p_node_letter verif_mot_ajoute(char mot[30],p_node_letter rac)
+p_node_letter_nom verif_mot_ajoute(char mot[30], p_node_letter_nom rac)
 {
-    p_node_letter verif_recherche= recherche_mot(mot,rac);
-    p_node_letter temp;
+    p_node_letter_nom verif_recherche= recherche_mot(mot, rac);
+    p_node_letter_nom temp;
     //si le mot existe pas on ajoute le mot
     if (verif_recherche==NULL)
     {
@@ -108,9 +108,9 @@ p_node_letter verif_mot_ajoute(char mot[30],p_node_letter rac)
 
 
 //0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
-void triage_arbre_et_ajout(char** mot,char** type,p_node_letter* tab_rac)
+void triage_arbre_et_ajout(char** mot, char** type, p_node_letter_nom* tab_rac)
 {
-  p_node_letter temp;
+  p_node_letter_nom temp;
 
   if(mot[2][0]=='V')
   {
