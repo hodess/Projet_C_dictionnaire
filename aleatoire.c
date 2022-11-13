@@ -65,3 +65,25 @@ p_node_letter aleatoire_mot_nom(p_node_letter rac)
         }
     }
 }
+
+
+
+void affichage_phrase_avec_flechis(p_node_letter* node_aleatoire,int forme)
+{
+    //type[0] : genre       type[1] : pluriel
+    int* type= aleatoire_mot_flechis(node_aleatoire[0]->mots_flechis);
+    if(forme==1)
+    {
+        //nom adj verbe nom
+        p_node_nom nom = searchNom(type[0],type[1],node_aleatoire[0]->mots_flechis->mot_flechis_nom);
+        printf("%s\t",nom->forme_flechie);
+        p_node_adj adj = searchAdj(type[0],type[1],node_aleatoire[1]->mots_flechis->mot_flechis_adj);
+        printf("%s\t",adj->forme_flechie);
+        p_node_ver verbe = searchVer(rand()%4+1,3,type[1],node_aleatoire[2]->mots_flechis->mot_flechis_ver);
+        printf("%s\t",verbe->forme_flechie);
+        nom = searchNom(type[0],type[1],node_aleatoire[3]->mots_flechis->mot_flechis_nom);
+        printf("%s\t",nom->forme_flechie);
+
+    }
+
+}

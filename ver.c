@@ -20,7 +20,7 @@ p_node_ver searchVer(int conjugaison, int genre, int pluriel, p_node_ver ver){
 void addVer(char adding_word[40], p_node_ver spot, int conjugaison, int genre, int pluriel){
     p_node_ver adding_node = (p_node_ver) malloc(sizeof(node_ver));
     strcpy(adding_node->forme_flechie,adding_word);
-    adding_node->conjugaison = 2;
+    adding_node->conjugaison = conjugaison;
     adding_node->genre = genre;
     adding_node->pluriel = pluriel;
     if (spot == NULL) {

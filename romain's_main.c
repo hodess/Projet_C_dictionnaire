@@ -72,6 +72,7 @@ void start_romain(p_node_letter* tab_rac)
             scanf("%d",&forme);
             if(forme==1)
             {
+                int taille=4;
                 p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(4 * (sizeof(p_node_letter)));
                 p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
                 p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
@@ -81,10 +82,12 @@ void start_romain(p_node_letter* tab_rac)
                 {
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
                 }
-                int taille=4;
+                printf("\n");
+                affichage_phrase_avec_flechis(p_node_aleatoire,forme);
             }
             if(forme==2)
             {
+                int taille=5;
                 p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(5 * (sizeof(p_node_letter)));
                 p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
                 p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
@@ -99,7 +102,6 @@ void start_romain(p_node_letter* tab_rac)
                         printf("qui\t");
                     }
                 }
-                int taille=5;
             }
         }
     }
