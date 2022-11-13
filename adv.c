@@ -2,7 +2,7 @@
 // Created by moraz on 08/11/2022.
 //
 
-#include "../header/adv.h"
+#include "adv.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
