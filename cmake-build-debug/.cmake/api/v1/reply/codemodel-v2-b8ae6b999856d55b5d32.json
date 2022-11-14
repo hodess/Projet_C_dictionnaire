@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Projet_C_dictionnaire::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Projet_C_dictionnaire-Debug-ee6c93d898c039a011fb.json",
+					"jsonFile" : "target-Projet_C_dictionnaire-Debug-35c9f6c286e5c084ce48.json",
 					"name" : "Projet_C_dictionnaire",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire/cmake-build-debug",
-		"source" : "C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire"
+		"build" : "C:/Users/moraz/OneDrive/Documents/EFREI/C/generateur de phrase/Projet_C_dictionnaire/cmake-build-debug",
+		"source" : "C:/Users/moraz/OneDrive/Documents/EFREI/C/generateur de phrase/Projet_C_dictionnaire"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }

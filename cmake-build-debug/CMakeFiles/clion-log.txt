@@ -1,4 +1,4 @@
-"C:\Program Files\Clions\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/Clions/CLion 2022.1.2/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Users\romai\Documents\ecole\L2-R\semestre 3\informatique\projet_C\Projet_C_dictionnaire" -B "C:\Users\romai\Documents\ecole\L2-R\semestre 3\informatique\projet_C\Projet_C_dictionnaire\cmake-build-debug"
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Users\moraz\OneDrive\Documents\EFREI\C\generateur de phrase\Projet_C_dictionnaire" -B "C:\Users\moraz\OneDrive\Documents\EFREI\C\generateur de phrase\Projet_C_dictionnaire\cmake-build-debug"
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/romai/Documents/ecole/L2-R/semestre 3/informatique/projet_C/Projet_C_dictionnaire/cmake-build-debug
+-- Build files have been written to: C:/Users/moraz/OneDrive/Documents/EFREI/C/generateur de phrase/Projet_C_dictionnaire/cmake-build-debug

@@ -6,9 +6,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "convert.h"
 
-p_node_ver searchVer(int conjugaison, int genre, int pluriel, p_node_ver ver){
-    while (genre != ver->genre || pluriel != ver->pluriel || conjugaison != ver->conjugaison){
+p_node_ver searchVer(char* conjugaison, char* pluriel, char* personne, p_node_ver ver){
+    int conjugaison_int = convert(conjugaison);
+    int pluriel_int = convert(pluriel);
+    int personne_int = convert(personne);
+    while (personne_int != ver->personne || pluriel_int != ver->pluriel || conjugaison_int != ver->conjugaison){
         if (ver->next == NULL) {
             return NULL;
         }
@@ -17,18 +21,24 @@ p_node_ver searchVer(int conjugaison, int genre, int pluriel, p_node_ver ver){
     return ver;
 }
 
-void addVer(char adding_word[40], p_node_ver spot, int conjugaison, int genre, int pluriel){
+p_node_ver addVer(char* adding_word, p_node_ver spot, char* conjugaison, char* pluriel, char* personne){
+    int conjugaison_int = convert(conjugaison);
+    int pluriel_int = convert(pluriel);
+    int personne_int = convert(personne);
+    printf("%p\n",spot);
     p_node_ver adding_node = (p_node_ver) malloc(sizeof(node_ver));
     strcpy(adding_node->forme_flechie,adding_word);
-    adding_node->conjugaison = conjugaison;
-    adding_node->genre = genre;
-    adding_node->pluriel = pluriel;
+    adding_node->conjugaison = conjugaison_int;
+    adding_node->personne = personne_int;
+    adding_node->pluriel = pluriel_int;
     if (spot == NULL) {
         spot = adding_node;
+        printf("%s\n",spot->forme_flechie);
         adding_node->next = NULL;
     }
     else {
         adding_node->next = spot->next;
         spot->next = adding_node;
     }
+    return spot;
 }
