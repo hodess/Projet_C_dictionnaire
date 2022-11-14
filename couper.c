@@ -8,7 +8,7 @@ void sinder_petite_chaine(char* fichier, p_node_letter* tab_rac)
 {
 
     char* subligne[8];
-    char * separateur = "\t:";
+    char * separateur = "\t:\n";
     char *temp[8];
     int i =0;
     subligne[i] = strtok(fichier,separateur);

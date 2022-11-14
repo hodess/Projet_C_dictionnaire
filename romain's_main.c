@@ -83,7 +83,7 @@ void start_romain(p_node_letter* tab_rac)
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
                 }
                 printf("\n");
-                affichage_phrase_avec_flechis(p_node_aleatoire,forme);
+                //affichage_phrase_avec_flechis(p_node_aleatoire,forme);
             }
             if(forme==2)
             {

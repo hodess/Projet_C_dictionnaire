@@ -25,6 +25,7 @@ CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj: \
  C:/PROGRA~1/Clions/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
  C:/PROGRA~1/Clions/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  C:/Users/romai/Documents/ecole/L2-R/semestre\ 3/informatique/projet_C/Projet_C_dictionnaire/node_letter.h \
+ C:/Users/romai/Documents/ecole/L2-R/semestre\ 3/informatique/projet_C/Projet_C_dictionnaire/convert.h \
  C:/Users/romai/Documents/ecole/L2-R/semestre\ 3/informatique/projet_C/Projet_C_dictionnaire/adj.h \
  C:/Users/romai/Documents/ecole/L2-R/semestre\ 3/informatique/projet_C/Projet_C_dictionnaire/adv.h \
  C:/Users/romai/Documents/ecole/L2-R/semestre\ 3/informatique/projet_C/Projet_C_dictionnaire/nom.h \

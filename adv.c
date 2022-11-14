@@ -7,8 +7,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-p_node_adv searchAdv(char word, p_node_adv adv){
-    while (word != * adv->forme_flechie){
+p_node_adv searchAdv(char* word, p_node_adv adv){
+    while (strcmp(word, * adv->forme_flechie) != 0 ){
         if (adv->next == NULL) {
             return NULL;
         }
@@ -17,15 +17,15 @@ p_node_adv searchAdv(char word, p_node_adv adv){
     return adv;
 }
 
-void addAdv(char adding_word[40], p_node_adv spot){
+p_node_adv addAdv(char* adding_word, p_node_adv spot){
     p_node_adv adding_node = (p_node_adv) malloc(sizeof(node_adv));
+    adding_node->forme_flechie=(char*) malloc(30*sizeof(char));
     strcpy(adding_node->forme_flechie, adding_word);
     if (spot == NULL) {
-        spot = adding_node;
         adding_node->next = NULL;
     }
     else {
-        adding_node->next = spot->next;
-        spot->next = adding_node;
+        adding_node->next = spot;
     }
+    return adding_node;
 }

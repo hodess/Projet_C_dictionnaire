@@ -49,7 +49,7 @@ p_node_letter aleatoire_mot_nom(p_node_letter rac)
         }
         else
         {
-            aleatoire = (rand() % 20);
+            aleatoire = (rand() % 15);
             if(aleatoire == 0 && tree->mots_flechis!=NULL)
             {
                 return tree;

@@ -132,22 +132,26 @@ void triage_arbre_et_ajout(char** mot, char** type, p_node_letter* tab_rac)
             temp->mots_flechis->mot_flechis_ver=addVer(mot[0],temp->mots_flechis->mot_flechis_ver,type[0],type[1],type[2]);
         }
     }
-    else if(mot[2][0]=='N')
+    else if(mot[2][0]=='N' && mot[2][1]!='N')
     {
         temp=verif_mot_ajoute(mot[1],tab_rac[2]);
-        //addNom(mot[0],temp->mots_flechis->mot_flechis_nom,type[0],type[1]);
+        temp->mots_flechis->mot_flechis_nom=addNom(mot[0],temp->mots_flechis->mot_flechis_nom,type[0],type[1]);
     }
     else if(mot[2][0]=='A')
     {
         if(mot[2][2]=='j')
         {
+            if(type[0][0]=='C')
+            {
+                type[1]="NULL";
+            }
             temp=verif_mot_ajoute(mot[1],tab_rac[3]);
-            //addAdj(mot[0],temp->mots_flechis->mot_flechis_adj,type[0],type[1]);
+            temp->mots_flechis->mot_flechis_adj=addAdj(mot[0],temp->mots_flechis->mot_flechis_adj,type[0],type[1]);
         }
         else if(mot[2][2]=='v')
         {
             temp=verif_mot_ajoute(mot[1],tab_rac[1]);
-            //addAdv(mot[0],temp->mots_flechis->mot_flechis_adv);
+            temp->mots_flechis->mot_flechis_adv=addAdv(mot[0],temp->mots_flechis->mot_flechis_adv);
         }
         else
         {

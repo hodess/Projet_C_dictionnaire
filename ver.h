@@ -13,8 +13,8 @@ typedef struct node_ver_s {
 
 }node_ver, *p_node_ver;
 
-p_node_ver searchVer(char* conjugaison, char* pluriel, char* personne, p_node_ver ver);      //retourne NULL si il n'existe pas
+p_node_ver searchVer(int conjugaison, int pluriel, int personne, p_node_ver ver);      //retourne NULL si il n'existe pas
 
-p_node_ver addVer(char adding_word[40], p_node_ver spot, char* conjugaison, char* pluriel, char* personne);
+p_node_ver addVer(char* adding_word, p_node_ver spot, char* conjugaison, char* pluriel, char* personne);
 
 #endif //MAIN_C_VER_H

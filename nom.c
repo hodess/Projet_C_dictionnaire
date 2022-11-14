@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "convert.h"
 
 p_node_nom searchNom(int genre, int pluriel, p_node_nom nom){
     while (genre != nom->genre || pluriel != nom->pluriel){
@@ -17,17 +18,19 @@ p_node_nom searchNom(int genre, int pluriel, p_node_nom nom){
     return nom;
 }
 
-void addNom(char adding_word[40], p_node_nom spot, int genre, int pluriel){
+p_node_nom addNom(char* adding_word, p_node_nom spot, char* genre, char* pluriel){
+    int pluriel_int = convert(pluriel);
+    int genre_int = convert(genre);
     p_node_nom adding_node = (p_node_nom) malloc(sizeof(node_nom));
+    adding_node->forme_flechie=(char*) malloc(30*sizeof(char));
     strcpy(adding_word, adding_node->forme_flechie);
-    adding_node->genre = genre;
-    adding_node->pluriel = pluriel;
+    adding_node->genre = genre_int;
+    adding_node->pluriel = pluriel_int;
     if (spot == NULL) {
-        spot = adding_node;
         adding_node->next = NULL;
     }
     else {
-        adding_node->next = spot->next;
-        spot->next = adding_node;
+        adding_node->next = spot;
     }
+    return adding_node;
 }

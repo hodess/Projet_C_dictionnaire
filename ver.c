@@ -8,11 +8,8 @@
 #include <stdlib.h>
 #include "convert.h"
 
-p_node_ver searchVer(char* conjugaison, char* pluriel, char* personne, p_node_ver ver){
-    int conjugaison_int = convert(conjugaison);
-    int pluriel_int = convert(pluriel);
-    int personne_int = convert(personne);
-    while (personne_int != ver->personne || pluriel_int != ver->pluriel || conjugaison_int != ver->conjugaison){
+p_node_ver searchVer(int conjugaison, int pluriel, int personne, p_node_ver ver){
+    while (personne != ver->personne || pluriel != ver->pluriel || conjugaison != ver->conjugaison){
         if (ver->next == NULL) {
             return NULL;
         }
