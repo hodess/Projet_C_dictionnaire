@@ -10,7 +10,7 @@ void start_romain(p_node_letter* tab_rac)
     while (1) {
         //savoir si on veut l'ajouté ou la recherché
         int ajout; //1= ajout_de_lettre ; 0 = recherche
-        printf("\n\n1.ajout d'un mot avec verification\n2.recherche \n3.genere un mot aleatoire\n");
+        printf("\n1.genere un mot aleatoire\n2.recherche \n");
         scanf("%d", &ajout);
         if (ajout == 0) {
             break;
@@ -22,79 +22,76 @@ void start_romain(p_node_letter* tab_rac)
 
         p_node_letter verif_mot;
         char lettre[30];
-        while(ajout==1 && lettre[0]!='0')
+        if(ajout==2)
         {
-            int type;
-            printf("quelle est le type\n1.verbe\n2.Adv\n3.nom\n4.adjectif\n");
-            scanf("%d",&type);
-            char mot[30];
-            printf("donner le mots de base\n");
-            scanf("%s",mot);
-            p_node_letter temp;
-            temp=recherche_mot(mot,tab_rac[type-1]);
-            if(temp==NULL)
-            {
-                temp= ajout_dun_mot(mot,tab_rac[type-1]);
-                printf("votre mot existait pas\t");
-            }
-            else
-            {
-                printf("le mot existait deja\t");
-            }
-            printf("votre mot = %s\n",temp->mots_flechis->mot_de_base);
-            //ajouter les caracteristique
-        }
-        while(ajout==2 && lettre[0]!='0')
-        {
-            printf("tape le mot a cherche\n");
+            printf("tape le mot de base a chercher\n");
             scanf(" %s", lettre);
             if (lettre[0]!='0')
             {
                 for(int i =0;i<4;i++)
                 {
                     verif_mot = recherche_mot(lettre,tab_rac[i]);
+                    if(i==0)
+                    {
+                        printf("pour les verbe ");
+                    }
+                    if(i==1)
+                    {
+                        printf("pour les adjectif ");
+                    }
+                    if(i==2)
+                    {
+                        printf("pour les nom ");
+                    }
+                    if(i==3)
+                    {
+                        printf("pour les adverbe ");
+                    }
                     if (verif_mot==NULL)
                     {
                         printf("le mot existe pas\n");
                     }
                     else
                     {
-                        printf("le mot existe\t");
-                        printf("%d\n",verif_mot->mots_flechis->nb_mot_flechis);
+                        printf("le mot existe avec ");
+                        printf("%d mot flechis\n",verif_mot->mots_flechis->nb_mot_flechis);
                     }
                 }
             }
         }
-        if(ajout==3)
+        if(ajout==1)
         {
+            //0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
             int forme;
-            printf("forme 1 ou 2\n");
+            printf("forme 1, 2 ou 3\n");
             scanf("%d",&forme);
+            // nom adj verb nom
             if(forme==1)
             {
                 int taille=4;
-                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(4 * (sizeof(p_node_letter)));
+                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(taille * (sizeof(p_node_letter)));
                 p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
                 p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
                 p_node_aleatoire[2]= aleatoire_mot_nom(tab_rac[0]);
                 p_node_aleatoire[3]= aleatoire_mot_nom(tab_rac[2]);
-                for(int i=0;i<4;i++)
+                for(int i=0;i<taille;i++)
                 {
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
                 }
                 printf("\n");
-                //affichage_phrase_avec_flechis(p_node_aleatoire,forme);
+                affichage_phrase_avec_flechis(p_node_aleatoire,forme);
             }
+            // nom qui verbe verb nom adj
             if(forme==2)
             {
                 int taille=5;
-                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(5 * (sizeof(p_node_letter)));
+                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(taille * (sizeof(p_node_letter)));
                 p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
-                p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
-                p_node_aleatoire[2]= aleatoire_mot_nom(tab_rac[3]);
+                p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[0]);
+                p_node_aleatoire[2]= aleatoire_mot_nom(tab_rac[0]);
                 p_node_aleatoire[3]= aleatoire_mot_nom(tab_rac[2]);
-                p_node_aleatoire[4]= aleatoire_mot_nom(tab_rac[0]);
-                for(int i=0;i<5;i++)
+                p_node_aleatoire[4]= aleatoire_mot_nom(tab_rac[3]);
+                for(int i=0;i<taille;i++)
                 {
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
                     if(i==1)
@@ -102,6 +99,28 @@ void start_romain(p_node_letter* tab_rac)
                         printf("qui\t");
                     }
                 }
+                printf("\n");
+                affichage_phrase_avec_flechis(p_node_aleatoire,forme);
+            }
+            //nom adj qui verbe adverbe
+            if(forme==3)
+            {
+                int taille=4;
+                p_node_letter* p_node_aleatoire=(p_node_letter*) malloc(taille * (sizeof(p_node_letter)));
+                p_node_aleatoire[0]= aleatoire_mot_nom(tab_rac[2]);
+                p_node_aleatoire[1]= aleatoire_mot_nom(tab_rac[3]);
+                p_node_aleatoire[2]= aleatoire_mot_nom(tab_rac[0]);
+                p_node_aleatoire[3]= aleatoire_mot_nom(tab_rac[1]);
+                for(int i=0;i<taille;i++)
+                {
+                    printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
+                    if(i==1)
+                    {
+                        printf("qui\t");
+                    }
+                }
+                printf("\n");
+                affichage_phrase_avec_flechis(p_node_aleatoire,forme);
             }
         }
     }

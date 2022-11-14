@@ -8,6 +8,8 @@
 #include "liste_lettre.h"
 #include <time.h>
 
+
+void affichage_det(int,int);
 p_node_letter aleatoire_lettre_nom(p_node_letter tree);
 p_node_letter aleatoire_mot_nom(p_node_letter rac);
 int* aleatoire_mot_flechis(p_flechis );

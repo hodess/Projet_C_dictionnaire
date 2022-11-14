@@ -7,8 +7,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-p_node_adv searchAdv(char* word, p_node_adv adv){
-    while (strcmp(word, * adv->forme_flechie) != 0 ){
+p_node_adv searchAdv(int word, p_node_adv adv){
+    while (strcmp(word, adv->forme_flechie) != 0 ){
         if (adv->next == NULL) {
             return NULL;
         }

@@ -23,7 +23,7 @@ p_node_nom addNom(char* adding_word, p_node_nom spot, char* genre, char* pluriel
     int genre_int = convert(genre);
     p_node_nom adding_node = (p_node_nom) malloc(sizeof(node_nom));
     adding_node->forme_flechie=(char*) malloc(30*sizeof(char));
-    strcpy(adding_word, adding_node->forme_flechie);
+    strcpy(adding_node->forme_flechie,adding_word);
     adding_node->genre = genre_int;
     adding_node->pluriel = pluriel_int;
     if (spot == NULL) {

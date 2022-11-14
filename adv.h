@@ -11,7 +11,7 @@ typedef struct node_adv_s {
 
 }node_adv, *p_node_adv;
 
-p_node_adv searchAdv(char* word, p_node_adv adv);      //retourne NULL si il n'existe pas
+p_node_adv searchAdv(int word, p_node_adv adv);      //retourne NULL si il n'existe pas
 
 p_node_adv addAdv(char* adding_word, p_node_adv spot);
 

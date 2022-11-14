@@ -3,17 +3,20 @@
 //
 
 #include "aleatoire.h"
+#
 
 int* aleatoire_mot_flechis(p_flechis mot_flechis)
 {
     int aleatoire=rand()%mot_flechis->nb_mot_flechis;
-    printf("%d\n",mot_flechis->nb_mot_flechis);
     p_node_nom temp=mot_flechis->mot_flechis_nom;
     //se balader dans le mot flechis
     for(int i=0;i<aleatoire;i++)
     {
         temp=temp->next;
     }
+
+    affichage_det(temp->genre,temp->pluriel);
+    printf("%s\t",temp->forme_flechie);
 
     int* type_mot = (int*) malloc(2*(sizeof (int)));
     type_mot[0]=temp->genre;
@@ -75,15 +78,154 @@ void affichage_phrase_avec_flechis(p_node_letter* node_aleatoire,int forme)
     if(forme==1)
     {
         //nom adj verbe nom
-        p_node_nom nom = searchNom(type[0],type[1],node_aleatoire[0]->mots_flechis->mot_flechis_nom);
-        printf("%s\t",nom->forme_flechie);
         p_node_adj adj = searchAdj(type[0],type[1],node_aleatoire[1]->mots_flechis->mot_flechis_adj);
-        printf("%s\t",adj->forme_flechie);
-        p_node_ver verbe = searchVer(rand()%4+1,3,type[1],node_aleatoire[2]->mots_flechis->mot_flechis_ver);
-        printf("%s\t",verbe->forme_flechie);
-        nom = searchNom(type[0],type[1],node_aleatoire[3]->mots_flechis->mot_flechis_nom);
-        printf("%s\t",nom->forme_flechie);
+        if(adj!=NULL)
+        {
+            printf("%s\t",adj->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+        int i=0;
+        int random;
+        p_node_ver verbe;
+        do
+        {
+            random=rand()%3+2;
+            verbe = searchVer(random,type[1],3,node_aleatoire[2]->mots_flechis->mot_flechis_ver);
+            i++;
+        }while(verbe==NULL &&i<5);
+        if(verbe!=NULL)
+        {
+            printf("%s\t",verbe->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+        p_node_nom nom = searchNom(type[0],type[1],node_aleatoire[3]->mots_flechis->mot_flechis_nom);
+        if(nom!=NULL)
+        {
+            printf("%s\t",nom->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+    }
+    if(forme ==2)
+    {
+        //nom qui verbe verb nom adj
+        int i=0;
+        int random=0;
+        p_node_ver verbe;
+        do
+        {
+            random=rand()%3+2;
+            verbe = searchVer(random,type[1],3,node_aleatoire[1]->mots_flechis->mot_flechis_ver);
+            i++;
+        }while(verbe==NULL &&i<5);
+        if(verbe!=NULL)
+        {
+            printf("%s\t",verbe->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+        printf("qui\t");
+        i=0;
+        random=0;
+        do
+        {
+            random=rand()%3+2;
+            verbe = searchVer(random,type[1],3,node_aleatoire[2]->mots_flechis->mot_flechis_ver);
+            i++;
+        }while(verbe==NULL &&i<5);
+        if(verbe!=NULL)
+        {
+            printf("%s\t",verbe->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+        p_node_nom nom = searchNom(type[0],type[1],node_aleatoire[3]->mots_flechis->mot_flechis_nom);
+        affichage_det(type[0],type[1]);
+        if(nom!=NULL)
+        {
+            printf("%s\t",nom->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+        p_node_adj adj = searchAdj(type[0],type[1],node_aleatoire[4]->mots_flechis->mot_flechis_adj);
+        if(adj!=NULL)
+        {
+            printf("%s\t",adj->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+    }
+    if(forme==3)
+    {
+        p_node_adj adj = searchAdj(type[0],type[1],node_aleatoire[1]->mots_flechis->mot_flechis_adj);
+        if(adj!=NULL)
+        {
+            printf("%s\t",adj->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+        printf("qui\t");
+        int i=0;
+        int random;
+        p_node_ver verbe;
+        do
+        {
+            random=rand()%3+2;
+            verbe = searchVer(random,type[1],3,node_aleatoire[2]->mots_flechis->mot_flechis_ver);
+            i++;
+        }while(verbe==NULL &&i<5);
+        if(verbe!=NULL)
+        {
+            printf("%s\t",verbe->forme_flechie);
+        }
+        else
+        {
+            printf("erreur\t");
+        }
+
+        printf("%s\t",node_aleatoire[3]->mots_flechis->mot_flechis_adv->forme_flechie);
+
 
     }
+    printf("\n");
+}
 
+
+
+void affichage_det(int genre,int pluriel)
+{
+    if(genre==1 && pluriel==1)
+    {
+        printf("des ");
+    }
+    if(genre==1 && pluriel==2)
+    {
+        printf("un ");
+    }
+    if(genre==2 && pluriel==1)
+    {
+        printf("les ");
+    }
+    if(genre==2 && pluriel==2)
+    {
+        printf("une ");
+    }
 }
