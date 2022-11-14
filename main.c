@@ -5,15 +5,24 @@
 int main() {
     p_node_ver temp;
     p_node_ver sport=NULL;
-    printf("bonjour");
+    printf("Debut\n");
     printf("%p\n",sport);
-    sport=addVer("bonjours",sport,"Inf","SG","P3");
-    printf("%p\n",sport);
-    printf("%s %d %d %d\n",sport->forme_flechie,sport->pluriel,sport->conjugaison,sport->personne);
-    printf("%p\n",sport);
-    sport=addVer("bonjo",sport,"IPre","PL","P3");
-    printf("%p\n",sport);
-    printf("%p\n",sport);
-    printf("%s %d %d %d\n",sport->forme_flechie,sport->pluriel,sport->conjugaison,sport->personne);
+    printf("1er\n");
+    temp=addVer("bonjour",sport,"Inf","SG","P3");
+    printf("2er\n");
+    printf("%p\n",temp);
+    printf("3er\n");
+    printf("%s %d %d %d\n",temp->forme_flechie,temp->pluriel,temp->conjugaison,temp->personne);
+    printf("4er\n");
+    printf("%p\n",temp);
+    printf("5er\n");
+    temp=addVer("au revoir",temp,"IPre","PL","P3");
+    printf("6er\n");
+    printf("%p\n",temp);
+    printf("7er\n");
+    printf("%p\n",temp);
+    printf("8er\n");
+    printf("%s %d %d %d\n",temp->forme_flechie,temp->pluriel,temp->conjugaison,temp->personne);
+    printf("hallo");
     return 0;
 }

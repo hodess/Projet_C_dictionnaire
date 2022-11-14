@@ -25,18 +25,18 @@ p_node_ver addVer(char* adding_word, p_node_ver spot, char* conjugaison, char* p
     int conjugaison_int = convert(conjugaison);
     int pluriel_int = convert(pluriel);
     int personne_int = convert(personne);
-    printf("%p\n",spot);
     p_node_ver adding_node = (p_node_ver) malloc(sizeof(node_ver));
     strcpy(adding_node->forme_flechie,adding_word);
     adding_node->conjugaison = conjugaison_int;
     adding_node->personne = personne_int;
     adding_node->pluriel = pluriel_int;
     if (spot == NULL) {
+        printf("IF\n");
         spot = adding_node;
-        printf("%s\n",spot->forme_flechie);
         adding_node->next = NULL;
     }
     else {
+        printf("ELSE\n");
         adding_node->next = spot->next;
         spot->next = adding_node;
     }
