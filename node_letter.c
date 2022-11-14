@@ -114,39 +114,50 @@ p_node_letter verif_mot_ajoute(char mot[30], p_node_letter rac)
 //0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
 void triage_arbre_et_ajout(char** mot, char** type, p_node_letter* tab_rac)
 {
-  p_node_letter temp;
+    p_node_letter temp;
 
-  if(mot[2][0]=='V')
-  {
-      temp=verif_mot_ajoute(mot[1],tab_rac[0]);
-      //addVer(mot[0],temp->mots_flechis->mot_flechis_ver,type[0],type[1],type[2]);
-  }
-  else if(mot[2][0]=='N')
-  {
-      temp=verif_mot_ajoute(mot[1],tab_rac[2]);
-      //addNom(mot[0],temp->mots_flechis->mot_flechis_nom,type[0],type[1]);
-  }
-  else if(mot[2][0]=='A')
-  {
-      if(mot[2][2]=='j')
-      {
-          temp=verif_mot_ajoute(mot[1],tab_rac[3]);
-          //addAdj(mot[0],temp->mots_flechis->mot_flechis_adj,type[0],type[1]);
-      }
-      else if(mot[2][2]=='v')
-      {
-          temp=verif_mot_ajoute(mot[1],tab_rac[1]);
-          //addAdv(mot[0],temp->mots_flechis->mot_flechis_adv);
-      }
-      else
-      {
-          temp=NULL;
-          //printf("impossible d'ajouté le mot :\t %s\t%s\t %s\n",mot[0],mot[1],mot[2]);
-      }
-  }
-  else
-  {
-      //printf("impossible d'ajouté le mot :\t %s\t%s\t %s\n",mot[0],mot[1],mot[2]);
-      temp=NULL;
-  }
+    if(mot[2][0]=='V')
+    {
+        if (type[1]==NULL)
+        {
+            if(type[0][0]=='I')
+            {
+                temp=verif_mot_ajoute(mot[1],tab_rac[0]);
+                temp->mots_flechis->mot_flechis_ver=addVer(mot[0],temp->mots_flechis->mot_flechis_ver,type[0],"NULL","NULL");
+            }
+        }
+        else
+        {
+            temp=verif_mot_ajoute(mot[1],tab_rac[0]);
+            temp->mots_flechis->mot_flechis_ver=addVer(mot[0],temp->mots_flechis->mot_flechis_ver,type[0],type[1],type[2]);
+        }
+    }
+    else if(mot[2][0]=='N')
+    {
+        temp=verif_mot_ajoute(mot[1],tab_rac[2]);
+        //addNom(mot[0],temp->mots_flechis->mot_flechis_nom,type[0],type[1]);
+    }
+    else if(mot[2][0]=='A')
+    {
+        if(mot[2][2]=='j')
+        {
+            temp=verif_mot_ajoute(mot[1],tab_rac[3]);
+            //addAdj(mot[0],temp->mots_flechis->mot_flechis_adj,type[0],type[1]);
+        }
+        else if(mot[2][2]=='v')
+        {
+            temp=verif_mot_ajoute(mot[1],tab_rac[1]);
+            //addAdv(mot[0],temp->mots_flechis->mot_flechis_adv);
+        }
+        else
+        {
+            temp=NULL;
+            //printf("impossible d'ajouté le mot :\t %s\t%s\t %s\n",mot[0],mot[1],mot[2]);
+        }
+    }
+    else
+    {
+        //printf("impossible d'ajouté le mot :\t %s\t%s\t %s\n",mot[0],mot[1],mot[2]);
+        temp=NULL;
+    }
 }

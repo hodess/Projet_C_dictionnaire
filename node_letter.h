@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "convert.h"
+
 #include "adj.h"
 #include "adv.h"
 #include "nom.h"
