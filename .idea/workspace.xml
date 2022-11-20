@@ -19,22 +19,46 @@
   <component name="ChangeListManager">
     <list default="true" id="d43bba52-bb9c-4de0-909b-dcf514e63b30" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adv.c" beforeDir="false" afterPath="$PROJECT_DIR$/adv.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adv.h" beforeDir="false" afterPath="$PROJECT_DIR$/adv.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aleatoire.c" beforeDir="false" afterPath="$PROJECT_DIR$/aleatoire.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aleatoire.h" beforeDir="false" afterPath="$PROJECT_DIR$/aleatoire.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adj.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adj.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aleatoire.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aleatoire.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0525734eae1d23507145.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d4aa4e820f5d1ae9c480.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-14T13-50-49-0274.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Projet_C_dictionnaire-Debug-35c9f6c286e5c084ce48.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/adv.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/adv.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/aleatoire.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/aleatoire.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/convert.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/convert.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/nom.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/nom.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/lecture.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/lecture.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Projet_C_dictionnaire.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Projet_C_dictionnaire.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert.c" beforeDir="false" afterPath="$PROJECT_DIR$/convert.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nom.c" beforeDir="false" afterPath="$PROJECT_DIR$/nom.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/couper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/couper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gigi's_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/gigi's_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gigi's_main.h" beforeDir="false" afterPath="$PROJECT_DIR$/gigi's_main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lecture.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lecture.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/liste_lettre.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/liste_lettre.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_letter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_letter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nom.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nom.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/romain's_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/romain's_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/romain's_main.h" beforeDir="false" afterPath="$PROJECT_DIR$/romain's_main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ver.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ver.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +99,11 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Projet_C_dictionnaire" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Projet_C_dictionnaire" TARGET_NAME="Projet_C_dictionnaire" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Projet_C_dictionnaire" RUN_TARGET_NAME="Projet_C_dictionnaire">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -97,6 +126,11 @@
       <workItem from="1668438456776" duration="4896000" />
       <workItem from="1668444676718" duration="1391000" />
       <workItem from="1668449351586" duration="5055000" />
+      <workItem from="1668457299889" duration="600000" />
+      <workItem from="1668461497201" duration="974000" />
+      <workItem from="1668498971235" duration="634000" />
+      <workItem from="1668499622257" duration="2081000" />
+      <workItem from="1668945820603" duration="879000" />
     </task>
     <servers />
   </component>

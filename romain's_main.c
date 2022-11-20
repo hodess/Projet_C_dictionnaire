@@ -10,7 +10,7 @@ void start_romain(p_node_letter* tab_rac)
     while (1) {
         //savoir si on veut l'ajouté ou la recherché
         int ajout; //1= ajout_de_lettre ; 0 = recherche
-        printf("\n1.genere un mot aleatoire\n2.recherche \n");
+        printf("\n1.genere une phrase aleatoire\n2.recherche \n");
         scanf("%d", &ajout);
         if (ajout == 0) {
             break;

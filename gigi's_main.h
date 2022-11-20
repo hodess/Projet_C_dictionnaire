@@ -5,8 +5,8 @@
 #ifndef MAIN_C_GIGI_S_MAIN_H
 #define MAIN_C_GIGI_S_MAIN_H
 #include <stdio.h>
-#include "couper.h"
-#include "lecture.h"
+#include "gestion_txt/header/couper.h"
+#include "gestion_txt/header/lecture.h"
 
 void start_gigi();
 

@@ -11,7 +11,6 @@ void start_gigi()
     text = fopen("dictionnaire_non_accentue.txt","r");
     p_node_letter* tab_rac;
     tab_rac=lecture_fichier(text);
-    printf("Fini\n");
     start_romain(tab_rac);
 }
 

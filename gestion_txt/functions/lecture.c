@@ -1,0 +1,31 @@
+//
+// Created by Gigi on 11/11/2022.
+//
+
+#include "../header/lecture.h"
+p_node_letter* lecture_fichier(FILE*text)
+{
+
+    //0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
+    p_node_letter* tab_rac=(p_node_letter*)malloc(4 * (sizeof (p_node_letter)));
+    for(int i=0;i<4;i++)
+    {
+        tab_rac[i]= creation_dune_branche('A');
+    }
+
+    char fichier[99];
+    if (text != NULL)
+    {
+        while(fgets(fichier,99,text) != NULL)
+        {
+            sinder_petite_chaine(fichier,tab_rac);
+        }
+    }
+    else
+    {
+        printf("fichier pas ouvert");
+    }
+    printf("fin des ajouts\n");
+    fclose(text);
+    return tab_rac;
+}
