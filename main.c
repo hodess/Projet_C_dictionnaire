@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "gigi's_main.h"
+#include "menu.h"
 
 int main() {
-    start_gigi();
+    lecutre_fichier_et_creation_de_larbre();
     return 0;
 }

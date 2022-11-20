@@ -1,16 +1,29 @@
 //
-// Created by romai on 27/10/2022.
+// Created by Gigi on 27/10/2022.
 //
 
-#include "romain's_main.h"
+#include "menu.h"
 
-//0 : verbe ; 1 : adverbe ; 2 : nom ; 3 : adjectif
-void start_romain(p_node_letter* tab_rac)
+void lecutre_fichier_et_creation_de_larbre()
+{
+    srand(time(NULL));
+    FILE* text;
+    text = fopen("dictionnaire_non_accentue.txt","r");
+    p_node_letter* tab_rac;
+    tab_rac=lecture_fichier(text);
+    menu(tab_rac);
+}
+
+
+
+
+
+void menu(p_node_letter* tab_rac)
 {
     while (1) {
         //savoir si on veut l'ajouté ou la recherché
         int ajout; //1= ajout_de_lettre ; 0 = recherche
-        printf("\n1.genere une phrase aleatoire\n2.recherche \n");
+        printf("\n1.genere une phrase aleatoire\n2.recherche \ntaper '0' pour quitter\n");
         scanf("%d", &ajout);
         if (ajout == 0) {
             break;
@@ -125,3 +138,5 @@ void start_romain(p_node_letter* tab_rac)
         }
     }
 }
+
+

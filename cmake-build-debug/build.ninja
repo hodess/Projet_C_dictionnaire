@@ -55,8 +55,8 @@ build CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj: C_COMPILER__Projet_C_dict
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
 
-build CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/romai/Documents/ecole/L2-R/semestre$ 3/informatique/projet_C/Projet_C_dictionnaire/gigi's_main.c || cmake_object_order_depends_target_Projet_C_dictionnaire
-  DEP_FILE = "CMakeFiles\Projet_C_dictionnaire.dir\gigi's_main.c.obj.d"
+build CMakeFiles/Projet_C_dictionnaire.dir/menu.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/romai/Documents/ecole/L2-R/semestre$ 3/informatique/projet_C/Projet_C_dictionnaire/menu.c || cmake_object_order_depends_target_Projet_C_dictionnaire
+  DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\menu.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
@@ -90,12 +90,6 @@ build CMakeFiles/Projet_C_dictionnaire.dir/gestion_des_node/functions/node_lette
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
   OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir\gestion_des_node\functions
-
-build CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/romai/Documents/ecole/L2-R/semestre$ 3/informatique/projet_C/Projet_C_dictionnaire/romain's_main.c || cmake_object_order_depends_target_Projet_C_dictionnaire
-  DEP_FILE = "CMakeFiles\Projet_C_dictionnaire.dir\romain's_main.c.obj.d"
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir
-  OBJECT_FILE_DIR = CMakeFiles\Projet_C_dictionnaire.dir
 
 build CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/adj.c.obj: C_COMPILER__Projet_C_dictionnaire_Debug C$:/Users/romai/Documents/ecole/L2-R/semestre$ 3/informatique/projet_C/Projet_C_dictionnaire/gestion_mot_flechis/functions/adj.c || cmake_object_order_depends_target_Projet_C_dictionnaire
   DEP_FILE = CMakeFiles\Projet_C_dictionnaire.dir\gestion_mot_flechis\functions\adj.c.obj.d
@@ -135,7 +129,7 @@ build CMakeFiles/Projet_C_dictionnaire.dir/genere_phrase/functions/convert.c.obj
 #############################################
 # Link the executable Projet_C_dictionnaire.exe
 
-build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gigi's_main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_txt/functions/couper.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_txt/functions/lecture.c.obj CMakeFiles/Projet_C_dictionnaire.dir/genere_phrase/functions/aleatoire.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_des_node/functions/liste_lettre.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_des_node/functions/node_letter.c.obj CMakeFiles/Projet_C_dictionnaire.dir/romain's_main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/adj.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/adv.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/nom.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/ver.c.obj CMakeFiles/Projet_C_dictionnaire.dir/genere_phrase/functions/convert.c.obj
+build Projet_C_dictionnaire.exe: C_EXECUTABLE_LINKER__Projet_C_dictionnaire_Debug CMakeFiles/Projet_C_dictionnaire.dir/main.c.obj CMakeFiles/Projet_C_dictionnaire.dir/menu.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_txt/functions/couper.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_txt/functions/lecture.c.obj CMakeFiles/Projet_C_dictionnaire.dir/genere_phrase/functions/aleatoire.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_des_node/functions/liste_lettre.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_des_node/functions/node_letter.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/adj.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/adv.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/nom.c.obj CMakeFiles/Projet_C_dictionnaire.dir/gestion_mot_flechis/functions/ver.c.obj CMakeFiles/Projet_C_dictionnaire.dir/genere_phrase/functions/convert.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Projet_C_dictionnaire.dir

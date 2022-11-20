@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "couper.h"
-#include "../../romain's_main.h"
+#include "../../menu.h"
 
 p_node_letter* lecture_fichier(FILE*);
 
