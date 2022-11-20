@@ -23,7 +23,7 @@ void menu(p_node_letter* tab_rac)
     while (1) {
         //savoir si on veut l'ajouté ou la recherché
         int ajout; //1= ajout_de_lettre ; 0 = recherche
-        printf("\n1.genere une phrase aleatoire\n2.recherche \ntaper '0' pour quitter\n");
+        printf("\n1.genere une phrase aleatoire\n2.recherche \n0.quitter\n");
         scanf("%d", &ajout);
         if (ajout == 0) {
             break;
@@ -107,7 +107,7 @@ void menu(p_node_letter* tab_rac)
                 for(int i=0;i<taille;i++)
                 {
                     printf("%s\t",p_node_aleatoire[i]->mots_flechis->mot_de_base);
-                    if(i==1)
+                    if(i==0)
                     {
                         printf("qui\t");
                     }

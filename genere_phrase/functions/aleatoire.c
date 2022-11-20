@@ -121,6 +121,7 @@ void affichage_phrase_avec_flechis(p_node_letter* node_aleatoire,int forme)
         int i=0;
         int random=0;
         p_node_ver verbe;
+        printf("qui\t");
         do
         {
             random=rand()%3+2;
@@ -135,7 +136,6 @@ void affichage_phrase_avec_flechis(p_node_letter* node_aleatoire,int forme)
         {
             printf("erreur\t");
         }
-        printf("qui\t");
         i=0;
         random=0;
         do
